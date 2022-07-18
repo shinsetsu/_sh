@@ -1,0 +1,227 @@
+﻿@*@{
+    List<shinLink> links = new List<shinLink>();
+    //links.Add("/", "Home", "Home", "_self", "", "");
+
+    //shinLink->HrefS IdS DisplayTextS TargetS DownloadS FilenameS
+
+
+
+    //links.Add(new shinLink("/PDF", "PDF", "PDFTooling"));
+
+    //links.Add(new shinLink("/webTech", "webTech", "webTechSites"));
+    //links.Add(new shinLink("/shinIps2", "shinIps2", "shinIps2"));
+    //links.Add(new shinLink("/Resume", "Resume", "Resume"));
+    //links.Add(new shinLink("https://devdocs.io/cpp/", "C++_Documentation", "C++_Documentation"));
+    //links.Add(new shinLink("https://en.cppreference.com/w/cpp/links/libs", "C++_Libraries", "C++_Libraries"));
+    //links.Add(new shinLink("https://docs.microsoft.com/en-us/aspnet/core/mvc/views/razor?view=aspnetcore-3.1", "RazorSyntax", "RazorSyntax"));
+    //links.Add(new shinLink("https://developer.mozilla.org/en-US/docs/Web/API", "MSDN_WebApIs", "MSDN_WebApIs"));
+    //links.Add(new shinLink("https://docs.microsoft.com/en-us/dotnet/api/", "ASP_Documentation", "ASP_Documentation"));
+    //links.Add(new shinLink("https://docs.microsoft.com/en-us/ef/", "Entity_Framework", "Entity_Framework"));
+    //links.Add(new shinLink("https://docs.microsoft.com/en-us/dotnet/csharp/", "C#_Documentation", "C#_Documentation"));
+    //links.Add(new shinLink("https://semantic-ui.com/", "semanticUI", "semanticUI"));
+    //links.Add(new shinLink("https://developers.google.com/docs/api/how-tos/overview", "GoogleDocs_API", "GoogleDocs_API"));
+
+    //links.Add(new shinLink("/Contact", "Contact", "Contact", true));
+    //links.Add(new shinLink("/ref", "ref", "ref"));
+
+
+    //links.Add(new shinLink("/UITooling", "UITooling", "js", true));
+    //links.Add(new shinLink("/UserSettings", "UserSettings", "UserSettings", true));
+    //links.Add(new shinLink("/SysMetrics", "SysMetrics", "SysMetrics", true));
+}
+*@
+
+
+<style>
+
+
+    .shinLinks {
+        font-family: 'IBM Plex Mono', monospace, 'Open Sans', sans-serif;
+        top: 10vh;
+        right: 2%;
+        position: fixed;
+        z-index: 9001;
+        color: #00f548d4;
+        width: auto;
+        background-color: rgba(0, 0, 0, 0.27);
+        border: .5px solid rgb(20, 20, 20);
+        padding: .55% .75%;
+        border-radius: 10px;
+        z-index: 50000;
+        position: static;
+        left: 0;
+        padding: .5% 10%;
+        background-color: rgb(0 0 0 / 37%);
+        margin: 0;
+        width: 100vw;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        border-radius: 0;
+        margin-top: 10px;
+    }
+
+        .shinLinks div {
+            min-width: 10% !important;
+            width: auto;
+            flex: auto;
+            text-wrap: none !important;
+        }
+
+        .shinLinks a {
+            display: block;
+            font-weight: 200;
+            border: none;
+            text-decoration: none;
+            margin-right: .4%;
+            margin-bottom: .5vh;
+            color: rgba(255, 255, 255, 0.83);
+            font-size: 9px;
+            letter-spacing: 1.7px;
+            width: 100%;
+            padding-right: 5%;
+            text-wrap: none !important;
+        }
+
+            .shinLinks a:hover {
+                color: #c0ff00;
+            }
+
+        .shinLinks img {
+            padding: 2%;
+            background: #005d76;
+            border-radius: .2vw;
+            /*            float: right;*/
+            border: .5px solid #282828;
+        }
+
+            .shinLinks img:hover {
+                background: #00ff90;
+                border-radius: 1px;
+            }
+
+        .shinLinks i {
+            margin-right: .1%;
+        }
+
+
+
+    .debug a {
+        color: #000000d4 !important;
+    }
+
+    .debug {
+        background-image: none;
+    }
+
+
+    #Home {
+        position: fixed;
+        /*left: 5vw;*/
+        left: 95px;
+        top: 0;
+        margin: auto;
+        text-align: center;
+        padding: 0;
+        background-color: #828282;
+        width: 3vw;
+        min-width: 40px;
+        height: 29px;
+        z-index: 10000;
+        border-bottom: 1px solid #dddddd;
+    }
+
+        #Home:hover {
+            background-color: rgb(114 196 219);
+        }
+
+
+
+
+
+
+    @@media only screen and (max-width: 1650px) {
+    }
+
+    @@media only screen and (max-width: 800px) {
+
+        .shinLinks div {
+            width: 100%;
+        }
+    }
+</style>
+
+<a href="/" id="Home">   <img src="~/home-24px.svg" />     </a>
+<br />
+<nav class="shinLinks">
+
+    <style>
+        #Resume {
+            color: #49ff00;
+            font-size: 22px;
+        }
+
+        #JTAssociates {
+            color: #3f6a6e;
+            font-size: 22px;
+        }
+    </style>
+
+    <div><a href=/Resume id=Resume>                                                                                   <i>/</i>Resume </a>                         </div>
+    @*<div><a href=/JTAssociates id=JTAssociates>
+    <br />
+    <i>/</i>JTAssociates </a>                         </div>*@
+    @*<div><a href=/StyleTooling id=StyleTooling>        <i>/</i>StyleTooling </a>        </div>*@
+    @*<div><a href=/shinIps2 id=shinIps2>        <i>/</i>shinIps2 </a>        </div>*@
+
+    <div><a href="https://en.wikipedia.org/wiki/Message-oriented_middleware" id="MOM" target="_blank">                                                                                   <i>/</i>MOM </a>                         </div>
+    <div><a href="https://en.wikipedia.org/wiki/Apache_Kafka#Connect_API" id="Kafka" target="_blank">                                                                                   <i>/</i>Kafka </a>                         </div>
+    <div><a href="https://en.wikipedia.org/wiki/Apache_Solr" id="Solr" target="_blank"><i>/</i>Solr </a>                         </div>
+    @*<div><a href="http://www.tug.org/levels.html" id=tug.io><i>/</i>Tug.io </a>                         </div>*@
+    <div><a href="https://lingojam.com/BoldTextGenerator" id=textToBold><i>/</i>textToBold lingoJam </a>                         </div>
+    <div><a href="https://devdocs.io/cpp/" ;_Documentation target="_blank">                                           <i>/</i>C&#x2B;&#x2B;_Documentation </a>      </div>
+    <div><a href="https://en.cppreference.com/w/cpp/links/libs" target="_blank">                                      <i>/</i>C&#x2B;&#x2B;_Libraries </a>          </div>
+    <div><a href="https://docs.microsoft.com/en-us/aspnet/core/mvc/views/razor?view=aspnetcore-3.1" target="_blank">  <i>/</i>RazorSyntax </a>                      </div>
+    <div><a href="https://developer.mozilla.org/en-US/docs/Web/API" target="_blank">                                  <i>/</i>MSDN_WebApIs </a>                     </div>
+    <div><a href="https://docs.microsoft.com/en-us/dotnet/api/" target="_blank">                                      <i>/</i>ASP_Documentation </a>                </div>
+    <div><a href="https://docs.microsoft.com/en-us/dotnet/api/microsoft.entityframeworkcore?view=efcore-3.1" target="_blank">                           <i>/</i>Entity_Framework </a>                 </div>
+    <div><a href="https://docs.microsoft.com/en-us/dotnet/csharp/" target="_blank">                                   <i>/</i>C#_Documentation </a>                 </div>
+    <div><a href="https://andrewlock.net/" target="_blank">                                   <i>/</i>AndewLock .NetEscapades </a>                 </div>
+    <div><a href="https://weblog.west-wind.com/" target="_blank">                                   <i>/</i>RickStrahl .NetWestWind</a>                 </div>
+    <div><a href="https://semantic-ui.com/" target="_blank">                                                          <i>/</i>semanticUI </a>                       </div>
+    <div><a href="https://material.io/design" target="_blank">                                                          <i>/</i>Material.io Design </a>                       </div>
+    <div><a href="https://developers.google.com/docs/api/how-tos/overview" target="_blank">                           <i>/</i>GoogleDocs_API </a>                   </div>
+   
+</nav>
+
+
+
+
+
+@*<nav class="shinLinks">
+
+    <br />
+
+    @foreach (var link in links) {
+        if (link.debugBool == false) {
+            <a href=@link.aHref id=@link.aId>        <i>/</i>@link.aDisplayText </a>
+        }
+    }*@
+@*<a href="/" id="Home">   <img src="~/port19/Images/SVG/home-24px.svg" />            </a>*@
+
+@* @*<a href="/WebTechURLs" id="WebTechURLs"> <i>/</i>WebTechURLs</a>*@
+@* <a href="/StockItem" id="StockItem"> <i>/</i>StockItem                </a>*@
+@*   <a href="/Articles" id="Articles"> <i>/</i>Articles                </a>*@
+
+
+@*@if (ViewBag.IsDebug) {<debug class="debug">
+                @foreach (var link in links) {
+                    if (link.debugBool == true) {<a href=@link.aHref id=@link.aId><i>/</i>@link.aDisplayText </a>}
+            }
+            </debug>}
+
+
+
+    </nav>*@
+
+
