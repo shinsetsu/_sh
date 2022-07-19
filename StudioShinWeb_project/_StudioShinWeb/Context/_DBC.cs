@@ -3,6 +3,10 @@ using Microsoft.EntityFrameworkCore;
 using _oBjects;
 
 namespace _DBC {
+  //Add-Migration InitialCreate
+  //update-database
+
+
   //https://docs.microsoft.com/en-us/ef/core/managing-schemas/scaffolding?tabs=dotnet-core-cli
 
   //dotnet ef dbcontext scaffold ... --context-dir Data --output-dir Models    
