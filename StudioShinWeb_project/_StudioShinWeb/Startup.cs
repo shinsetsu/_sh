@@ -8,6 +8,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
+using _DBC;
+using _oBjects;
 
 namespace _StudioShinWeb {
   public class Startup {
@@ -19,7 +22,16 @@ namespace _StudioShinWeb {
 
     // This method gets called by the runtime. Use this method to add services to the container.
     public void ConfigureServices(IServiceCollection services) {
+
+
+
       services.AddControllersWithViews();
+      services.AddRazorPages();
+      services.AddMvc();
+      services.AddServerSideBlazor();
+
+      services.AddDbContext<DataBase>(
+          options => options.UseSqlServer("name=ConnectionStrings:DefaultConnection"));
     }
 
     // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
