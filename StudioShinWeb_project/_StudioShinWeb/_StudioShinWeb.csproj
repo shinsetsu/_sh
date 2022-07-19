@@ -1,7 +1,15 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
 
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <TypeScriptTarget>ESNext</TypeScriptTarget>
+  </PropertyGroup>
+
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <TypeScriptTarget>ESNext</TypeScriptTarget>
+  </PropertyGroup>
+
   <PropertyGroup>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TargetFramework>net6.0</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
@@ -9,6 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.7" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
   </ItemGroup>
 
