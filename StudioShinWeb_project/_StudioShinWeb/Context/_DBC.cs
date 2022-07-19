@@ -29,7 +29,7 @@ namespace _DBC {
 
 
     //public DbSet<_oBjects._shIP_M> _shIP_M { get; set; }
-    //public DbSet<_oBjects.shinIps2> shinIps2 { get; set; }
+    public DbSet<_oBjects.shinIps2> shinIps2 { get; set; }
     public DbSet<_oBjects.shinSiteMetrics> shinSiteMetrics { get; set; }
     //public DbSet<_oBjects.shinJWys> shinJWys { get; set; }
 
@@ -78,11 +78,11 @@ namespace _DBC {
       //if (!_DB.shinSiteMetrics.Any()) { _DB.Add(new shinSiteMetrics { pageViewsDebug = 1, pageViewsRelease = 1, EventsFiredDebug = 1 }); }   // Looking if DB has been seeded
 
 
-      //if (!_DB._shIP_M.Any()) { _DB.Add(new _shIP_M { IP = "Init" }); }   // Looking if DB has been seeded
+      if (!_DB.shinIps2.Any()) { _DB.Add(new shinIps2 { IP = "Init" }); }   // Looking if DB has been seeded
 
 
 
-      //_DB.SaveChanges();
+      _DB.SaveChanges();
     }
   }
 }

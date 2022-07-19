@@ -40,7 +40,7 @@ namespace _StudioShinWeb {
 
 
 
-      //_DBInitalize.Init(_DB);
+      _DBInitalize.Init(_DB);
 
       //base.OnActionExecuted(context);  // Not sure what this was from
 
@@ -67,19 +67,19 @@ namespace _StudioShinWeb {
 
       }
 
-      //if (true || Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT") != "Development")//ToggleThisOffIfYouNeedAFasterReloadDuringDevelopment___SometimesIUseThisInDebug_and_sometimesInRelease
-      //{
+      if (true || Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT") != "Development")//ToggleThisOffIfYouNeedAFasterReloadDuringDevelopment___SometimesIUseThisInDebug_and_sometimesInRelease
+      {
 
-      //  _shIP_M = new _shIP_M();
+        shinIps2 ip = new shinIps2();
 
-      //  if ((ViewBag.ClientIP = HttpContext.Connection.RemoteIpAddress.ToString()) != null) {
+        if ((ViewBag.ClientIP = HttpContext.Connection.RemoteIpAddress.ToString()) != null) {
 
-      //    _shIP_M.Upsert(Request.HttpContext.Connection.RemoteIpAddress.ToString(), _DB);
-      //    //ViewBag.IpCount = _shIP_M.CountIpsSeen();
-      //  } else { ViewBag.IpCount = 0; }
+          ip.InsertIP(Request.HttpContext.Connection.RemoteIpAddress.ToString(), _DB);
+          ViewBag.IpCount = ip.GetIpRowCount(_DB);
+        } else { ViewBag.IpCount = 0; }
 
 
-      if ((HttpContext.Connection.RemoteIpAddress.ToString()) != null) {
+        if ((HttpContext.Connection.RemoteIpAddress.ToString()) != null) {
         ViewBag.ClientIP = HttpContext.Connection.RemoteIpAddress.ToString();
       }
 
@@ -94,7 +94,7 @@ namespace _StudioShinWeb {
 
 
 
-      //}
+      }
     }
 
     [Route("")]
