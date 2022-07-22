@@ -1,0 +1,48 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = _StudioShinWeb
+build_property.RootNamespace = _StudioShinWeb
+build_property.ProjectDir = C:\shinRepos\_sh\StudioShinWeb_project\_StudioShinWeb\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\shinRepos\_sh\StudioShinWeb_project\_StudioShinWeb
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/shinRepos/_sh/StudioShinWeb_project/_StudioShinWeb/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = RXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/shinRepos/_sh/StudioShinWeb_project/_StudioShinWeb/IntroBar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = SW50cm9CYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/shinRepos/_sh/StudioShinWeb_project/_StudioShinWeb/z_writing.cshtml]
+build_metadata.AdditionalFiles.TargetPath = el93cml0aW5nLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/shinRepos/_sh/StudioShinWeb_project/_StudioShinWeb/z_z_shinL_i_n_k_s.cshtml]
+build_metadata.AdditionalFiles.TargetPath = el96X3NoaW5MX2lfbl9rX3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/shinRepos/_sh/StudioShinWeb_project/_StudioShinWeb/z__Resume_________________________.cshtml]
+build_metadata.AdditionalFiles.TargetPath = el9fUmVzdW1lX19fX19fX19fX19fX19fX19fX19fX19fXy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/shinRepos/_sh/StudioShinWeb_project/_StudioShinWeb/z___AboutZJ____________________.cshtml]
+build_metadata.AdditionalFiles.TargetPath = el9fX0Fib3V0WkpfX19fX19fX19fX19fX19fX19fXy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/shinRepos/_sh/StudioShinWeb_project/_StudioShinWeb/z___Wardrobe____________________.cshtml]
+build_metadata.AdditionalFiles.TargetPath = el9fX1dhcmRyb2JlX19fX19fX19fX19fX19fX19fX18uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/shinRepos/_sh/StudioShinWeb_project/_StudioShinWeb/■__SM________Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = 4pagX19TTV9fX19fX19fSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
