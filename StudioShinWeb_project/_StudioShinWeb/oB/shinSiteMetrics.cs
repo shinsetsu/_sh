@@ -10,45 +10,47 @@ using System.Net.NetworkInformation;
 using _DBC;
 
 namespace _oBjects {
-  public class shinLink {
-    public shinLink() { }
-    public shinLink(string aHref, string aId, string aDisplayText, bool debug) {
-      this.aHref = aHref;
-      this.aId = aId;
-      this.aDisplayText = aDisplayText;
-      this.aTarget = "_self";
-      this.aDownload = "";
-      this.aFilename = "";
-      this.debugBool = debug;
-    }
-    public shinLink(string aHref, string aId, string aDisplayText) {
-      this.aHref = aHref;
-      this.aId = aId;
-      this.aDisplayText = aDisplayText;
-      this.aTarget = "_self";
-      this.aDownload = "";
-      this.aFilename = "";
-      this.debugBool = false;
-    }
-    public shinLink(string aHref, string aId, string aDisplayText, string aTarget, string aDownload, string aFilename) {
-      this.aHref = aHref;
-      this.aId = aId;
-      this.aDisplayText = aDisplayText;
-      this.aTarget = aTarget;
-      this.aDownload = aDownload;
-      this.aFilename = aFilename;
-      this.debugBool = false;
-    }
 
-    public string aHref { get; set; }
-    public string aId { get; set; }
-    public string aDisplayText { get; set; }
-    public string aTarget { get; set; }
-    public string aDownload { get; set; }
-    public string aFilename { get; set; }
-    public bool debugBool { get; set; }
-    [NotMapped] DataBase _DB;
-  }
+
+  //  public class shinLink {
+  //    public shinLink() { }
+  //    public shinLink(string aHref, string aId, string aDisplayText, bool debug) {
+  //      this.aHref = aHref;
+  //      this.aId = aId;
+  //      this.aDisplayText = aDisplayText;
+  //      this.aTarget = "_self";
+  //      this.aDownload = "";
+  //      this.aFilename = "";
+  //      this.debugBool = debug;
+  //    }
+  //    public shinLink(string aHref, string aId, string aDisplayText) {
+  //      this.aHref = aHref;
+  //      this.aId = aId;
+  //      this.aDisplayText = aDisplayText;
+  //      this.aTarget = "_self";
+  //      this.aDownload = "";
+  //      this.aFilename = "";
+  //      this.debugBool = false;
+  //    }
+  //    public shinLink(string aHref, string aId, string aDisplayText, string aTarget, string aDownload, string aFilename) {
+  //      this.aHref = aHref;
+  //      this.aId = aId;
+  //      this.aDisplayText = aDisplayText;
+  //      this.aTarget = aTarget;
+  //      this.aDownload = aDownload;
+  //      this.aFilename = aFilename;
+  //      this.debugBool = false;
+  //    }
+
+  //    public string aHref { get; set; }
+  //    public string aId { get; set; }
+  //    public string aDisplayText { get; set; }
+  //    public string aTarget { get; set; }
+  //    public string aDownload { get; set; }
+  //    public string aFilename { get; set; }
+  //    public bool debugBool { get; set; }
+  //    [NotMapped] DataBase _DB;
+  //  }
 
 
 
@@ -59,8 +61,7 @@ namespace _oBjects {
     [Key][DisplayName("Id}")] public int id { get; set; }
 
 
-    [DisplayName("PageViewsDebug")] public int pageViewsDebug { get; set; }
-    [DisplayName("PageViewsRelease")] public int pageViewsRelease { get; set; }
+
 
     [DisplayName("EventsFiredRelease")] public int EventsFiredRelease { get; set; }
     [DisplayName("EventsFiredDebug")] public int EventsFiredDebug { get; set; }
@@ -101,43 +102,17 @@ namespace _oBjects {
         if (siteMetrics == null) { _DB.Add(new shinSiteMetrics() { }); }
 
         if (Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT") == "Development") {
-          siteMetrics.pageViewsDebug++; _DB.Update(siteMetrics);
-        } else { siteMetrics.pageViewsRelease++; _DB.Update(siteMetrics); }
+          siteMetrics.EventsFiredDebug++; _DB.Update(siteMetrics);
+        } else { siteMetrics.EventsFiredRelease++; _DB.Update(siteMetrics); }
 
         _DB.SaveChanges();
 
       } catch (Exception e) { var a = e; }
     }
 
-    internal dynamic GetReleaseCount(DataBase _DB) {
-      try {
-        shinSiteMetrics siteMetrics = _DB.shinSiteMetrics.FirstOrDefault();
-        if (siteMetrics == null) {
-          siteMetrics = new shinSiteMetrics() { };
-
-        }
-        return siteMetrics.pageViewsRelease;
-      } catch (Exception) {
-        return 0;
-      }
-
-    }
-
-    internal dynamic GetDebugCount(DataBase Databaseontext) {
-      try {
-        shinSiteMetrics siteMetrics = Databaseontext.shinSiteMetrics.FirstOrDefault();
-        if (siteMetrics == null) {
-          siteMetrics = new shinSiteMetrics() { };
-
-        }
-        return siteMetrics.pageViewsDebug;
-      } catch (Exception) {
-        return 0;
-      }
 
 
 
-    }
   }
 
 

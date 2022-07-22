@@ -24,28 +24,22 @@ namespace _StudioShinWeb {
 
     }
 
-    private void initVariables() {
-      //var shinIP2 = new _shIP_M(); shinIP2.init();
-      //var metrics = new shinSiteMetrics(); metrics.init();
-
-
-    }
-
     ///■■■■  O v e r R i d e s ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 
     public override void OnActionExecuted(ActionExecutedContext context) {
-      //siteMetrics.PageEventsIncrement(_DB);
+      
 
 
 
 
 
-      _DBInitalize.Init(_DB);
+
+      _DBInitalize.Init(_DB); // Checking if database tables are empty. Adds intial value if so.
 
       //base.OnActionExecuted(context);  // Not sure what this was from
 
-      //shinSiteMetrics siteMetrics = _DB.shinSiteMetrics.FirstOrDefault();
-      shinSiteMetrics siteMetrics = new shinSiteMetrics();
+      shinSiteMetrics siteMetrics = _DB.shinSiteMetrics.FirstOrDefault();
+
 
       ViewBag.IsDebug = false;
 
@@ -58,7 +52,7 @@ namespace _StudioShinWeb {
       ViewBag.EventsFiredRelease = "-";
       ViewBag.EventsFiredDebug = "-";
 
-
+      siteMetrics.PageEventsIncrement(_DB);
       if (Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT") == "Development") {
         ViewBag.IsDebug = true;
       } else {
@@ -84,13 +78,11 @@ namespace _StudioShinWeb {
       }
 
 
-      //ViewBag.pageViewsDebug = siteMetrics.GetDebugCount(_DB);
-      //ViewBag.pageViewsRelease = siteMetrics.GetReleaseCount(_DB);
-      ViewBag.Mac = siteMetrics.GetMacAddress();
+        ViewBag.Mac = siteMetrics.GetMacAddress();
 
 
-      //ViewBag.EventsFiredRelease = siteMetrics.EventsFiredRelease;
-      //ViewBag.EventsFiredDebug = siteMetrics.EventsFiredDebug;
+        ViewBag.EventsFiredRelease = siteMetrics.EventsFiredRelease;
+        ViewBag.EventsFiredDebug = siteMetrics.EventsFiredDebug;
 
 
 
