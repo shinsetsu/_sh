@@ -97,9 +97,15 @@ namespace _StudioShinWeb {
     [Route("")]
     [Route("Wardrobe")]
     public IActionResult Index() {
-      return View("z___Wardrobe____________________.cshtml");
+      return View("z___Wardrobe_____.cshtml");
     }
 
+
+    
+    [Route("GuestBook")]
+    public IActionResult GuestBook() {
+      return View("z___GuestBook____.cshtml");
+    }
     //  [Route("_shIP_M")] public IActionResult _shIP_M() { return View("_shIP_M.cshtml"); }
 
 
