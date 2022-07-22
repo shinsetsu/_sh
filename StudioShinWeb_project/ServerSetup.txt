@@ -1,0 +1,7 @@
+Godaddy SSL
+	
+	https://www.godaddy.com/help/install-my-ssl-certificate-16623?isc=gdbb4504&utm_source=gdocp&utm_medium=email&utm_campaign=en-US_other_email-nonrevenue_base_gd&utm_content=220721_4504_Customer-Success_Other_Product_Product-Notification_gdbb4504_2vUbvwrZExnU2TlHFzjNF4
+	https://www.godaddy.com/help/manually-install-an-ssl-certificate-on-my-iis-10-server-27349
+
+Redirect http to  https
+	https://www.ssl.com/how-to/redirect-http-to-https-with-windows-iis-10/
