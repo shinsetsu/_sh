@@ -70,7 +70,13 @@
 
     <siteMetrics>
         <ul>
-
+            
+            @if (ViewBag.baseUrl != null || ViewBag.baseUrl != "") {
+                <li> baseUrl: @ViewBag.baseUrl</li>
+            }
+             @if (ViewBag.urlPath != null || ViewBag.urlPath != "") {
+                <li> urlPath: @ViewBag.urlPath</li>
+            }
             @if (ViewBag.IsDebug != null || ViewBag.IsDebug != "") {
                 <li> IsDebug: @ViewBag.IsDebug</li>
             }

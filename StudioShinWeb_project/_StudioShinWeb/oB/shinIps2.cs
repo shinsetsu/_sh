@@ -130,9 +130,11 @@ namespace _oBjects {
     [Key][DisplayName("Id}")] public Int64 id { get; set; }
     public string IP { get; set; }
     public IpTypes? IpType { get; set; }
-    public DateTime? seenDate { get; set; }
-    public int? timesSeenDay { get; set; }
-    public Int64? timesSeenCount { get; set; }
+    public DateTime lastSeenDate { get; set; }
+    public DateTime firstSeenDate { get; set; }
+
+    public int? resumePageView { get; set; }
+    public int? indexPageViews { get; set; }
     public Int64? totalIpsSeen { get; set; }
     public string countCode { get; set; }
     public string countName { get; set; }
@@ -150,9 +152,11 @@ namespace _oBjects {
     public shinIps2() {
       IP = "_";
       this.IpType = null;
-      this.seenDate = DateTime.UtcNow;
-      this.timesSeenDay = -1;
-      this.timesSeenCount = -1;
+      this.lastSeenDate = DateTime.UtcNow;
+      this.firstSeenDate = DateTime.UtcNow;
+      this.resumePageView = 0;
+      this.indexPageViews = 0;
+
       this.totalIpsSeen = -1;
       this.countCode = "_";
       this.countName = "_";
@@ -192,38 +196,36 @@ namespace _oBjects {
 
 
 
-    public bool InsertIP(string ip, DataBase _DB) { //Returns True if added, False if not;
+    public bool upsertIP(string ip, DataBase _DB, string currentPage) { //Returns True if added, False if not;
 
-      
-      shinIps2 shinIP = new shinIps2() {
-        IP = ip,
-        seenDate = DateTime.UtcNow,
-        timesSeenDay = 1,
-        timesSeenCount = 1,
-        totalIpsSeen = 1,
 
-      };
 
       try {
+        shinIps2 ipUpsert = _DB.shinIps2.FirstOrDefault(x => x.id == id);
+
+        if (ipUpsert == null) { ipUpsert = new shinIps2(); }
+
+
+
 
         if (ip != "::/" && ip != "::1") { //https://ipstack.com/quickstart
           using (WebClient client = new WebClient()) {
-            string s = client.DownloadString("http://api.ipstack.com/" + shinIP.IP + "?access_key=3c04ccc15d0b1d91a38baf224bf80dd4");
+            string s = client.DownloadString("http://api.ipstack.com/" + ipUpsert.IP + "?access_key=3c04ccc15d0b1d91a38baf224bf80dd4");
             //string s = client.DownloadString("http://api.ipstack.com/24.12.63.159?access_key=3c04ccc15d0b1d91a38baf224bf80dd4");
 
             JObject jO = JObject.Parse(s);
 
-            if (jO["type"].ToString() == "ipv4") { shinIP.IpType = IpTypes.IP4; }
-            if (jO["type"].ToString() == "ipv6") { shinIP.IpType = IpTypes.IP6; }
+            if (jO["type"].ToString() == "ipv4") { ipUpsert.IpType = IpTypes.IP4; }
+            if (jO["type"].ToString() == "ipv6") { ipUpsert.IpType = IpTypes.IP6; }
 
-            shinIP.countCode = jO["country_code"].ToString();
-            shinIP.countName = jO["country_name"].ToString();
-            shinIP.stateABR = jO["region_code"].ToString();
-            shinIP.state = jO["region_name"].ToString();
-            shinIP.city = jO["city"].ToString();
-            shinIP.zip = jO["zip"].ToString();
-            shinIP.latitude = jO["latitude"].ToString();
-            shinIP.longitude = jO["longitude"].ToString();
+            ipUpsert.countCode = jO["country_code"].ToString();
+            ipUpsert.countName = jO["country_name"].ToString();
+            ipUpsert.stateABR = jO["region_code"].ToString();
+            ipUpsert.state = jO["region_name"].ToString();
+            ipUpsert.city = jO["city"].ToString();
+            ipUpsert.zip = jO["zip"].ToString();
+            ipUpsert.latitude = jO["latitude"].ToString();
+            ipUpsert.longitude = jO["longitude"].ToString();
           }
         }
 
@@ -231,7 +233,7 @@ namespace _oBjects {
 
 
 
-        _DB.Add(shinIP);
+        _DB.Add(ipUpsert);
         _DB.SaveChanges();
         return true;
       } catch (Exception e) { var a = e; return false; }

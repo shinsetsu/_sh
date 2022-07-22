@@ -2,6 +2,7 @@
 using _oBjects;
 
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 using Microsoft.Extensions.Logging;
@@ -16,22 +17,26 @@ namespace _StudioShinWeb {
     private readonly ILogger<HomeController> _logger;
     private readonly DataBase _DB;
     private readonly IWebHostEnvironment _ENV;
+    private readonly IHttpContextAccessor _httpContextAccessor;
     // private _shIP_M _shIP_M;
 
-    public HomeController(DataBase _DB, IWebHostEnvironment env) {
+    public HomeController(DataBase _DB, IWebHostEnvironment env, IHttpContextAccessor httpContextAccessor) {
 
       this._DB = _DB; _ENV = env;
+      _httpContextAccessor = httpContextAccessor;
 
     }
 
     ///■■■■  O v e r R i d e s ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 
     public override void OnActionExecuted(ActionExecutedContext context) {
-      
 
 
 
 
+      ViewBag.baseUrl = $"{this.Request.Scheme}://{this.Request.Host.Value.ToString()}{this.Request.PathBase.Value.ToString()}";
+
+      ViewBag.urlPath = HttpContext.Request.Path;
 
 
       _DBInitalize.Init(_DB); // Checking if database tables are empty. Adds intial value if so.
@@ -68,14 +73,14 @@ namespace _StudioShinWeb {
 
         if ((ViewBag.ClientIP = HttpContext.Connection.RemoteIpAddress.ToString()) != null) {
 
-          ip.InsertIP(Request.HttpContext.Connection.RemoteIpAddress.ToString(), _DB);
+          ip.upsertIP(Request.HttpContext.Connection.RemoteIpAddress.ToString(), _DB, "url");
           ViewBag.IpCount = ip.GetIpRowCount(_DB);
         } else { ViewBag.IpCount = 0; }
 
 
         if ((HttpContext.Connection.RemoteIpAddress.ToString()) != null) {
-        ViewBag.ClientIP = HttpContext.Connection.RemoteIpAddress.ToString();
-      }
+          ViewBag.ClientIP = HttpContext.Connection.RemoteIpAddress.ToString();
+        }
 
 
         ViewBag.Mac = siteMetrics.GetMacAddress();

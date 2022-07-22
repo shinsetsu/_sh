@@ -29,7 +29,7 @@ namespace _StudioShinWeb {
       services.AddRazorPages();
       services.AddMvc();
       services.AddServerSideBlazor();
-
+      services.AddHttpContextAccessor();
       services.AddDbContext<DataBase>(
           options => options.UseSqlServer("name=ConnectionStrings:DefaultConnection"));
     }
