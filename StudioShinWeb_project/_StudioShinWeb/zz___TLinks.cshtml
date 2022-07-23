@@ -1,37 +1,4 @@
-﻿@*@{
-    List<shinLink> links = new List<shinLink>();
-    //links.Add("/", "Home", "Home", "_self", "", "");
-
-    //shinLink->HrefS IdS DisplayTextS TargetS DownloadS FilenameS
-
-
-
-    //links.Add(new shinLink("/PDF", "PDF", "PDFTooling"));
-
-    //links.Add(new shinLink("/webTech", "webTech", "webTechSites"));
-    //links.Add(new shinLink("/shinIps2", "shinIps2", "shinIps2"));
-    //links.Add(new shinLink("/Resume", "Resume", "Resume"));
-    //links.Add(new shinLink("https://devdocs.io/cpp/", "C++_Documentation", "C++_Documentation"));
-    //links.Add(new shinLink("https://en.cppreference.com/w/cpp/links/libs", "C++_Libraries", "C++_Libraries"));
-    //links.Add(new shinLink("https://docs.microsoft.com/en-us/aspnet/core/mvc/views/razor?view=aspnetcore-3.1", "RazorSyntax", "RazorSyntax"));
-    //links.Add(new shinLink("https://developer.mozilla.org/en-US/docs/Web/API", "MSDN_WebApIs", "MSDN_WebApIs"));
-    //links.Add(new shinLink("https://docs.microsoft.com/en-us/dotnet/api/", "ASP_Documentation", "ASP_Documentation"));
-    //links.Add(new shinLink("https://docs.microsoft.com/en-us/ef/", "Entity_Framework", "Entity_Framework"));
-    //links.Add(new shinLink("https://docs.microsoft.com/en-us/dotnet/csharp/", "C#_Documentation", "C#_Documentation"));
-    //links.Add(new shinLink("https://semantic-ui.com/", "semanticUI", "semanticUI"));
-    //links.Add(new shinLink("https://developers.google.com/docs/api/how-tos/overview", "GoogleDocs_API", "GoogleDocs_API"));
-
-    //links.Add(new shinLink("/Contact", "Contact", "Contact", true));
-    //links.Add(new shinLink("/ref", "ref", "ref"));
-
-
-    //links.Add(new shinLink("/UITooling", "UITooling", "js", true));
-    //links.Add(new shinLink("/UserSettings", "UserSettings", "UserSettings", true));
-    //links.Add(new shinLink("/SysMetrics", "SysMetrics", "SysMetrics", true));
-}
-*@
-
-
+﻿
 <style>
 
 
@@ -167,19 +134,10 @@
         }
 
 
-        #JTAssociates {
-            color: #3f6a6e;
-            font-size: 22px;
-        }
     </style>
 
-    <div><a href=/Resume id=Resume>             <i>/</i>    Resume </a>                         </div>
-    <div><a href=/GuestBook id=GuestBook>       <i>/</i>    Guestbook</a>                         </div>
-    @*<div><a href=/JTAssociates id=JTAssociates>
-    <br />
-    <i>/</i>JTAssociates </a>                         </div>*@
-    @*<div><a href=/StyleTooling id=StyleTooling>        <i>/</i>StyleTooling </a>        </div>*@
-    @*<div><a href=/shinIps2 id=shinIps2>        <i>/</i>shinIps2 </a>        </div>*@
+    <div><a href=/Resume id=Resume>             <i>/</i>Resume </a>                         </div>
+    <div><a href=/GuestBook id=GuestBook>       <i>/</i>Guestbook</a>                         </div>
 
     <div><a href="https://en.wikipedia.org/wiki/Message-oriented_middleware" id="MOM" target="_blank">                                                                                   <i>/</i>MOM </a>                         </div>
     <div><a href="https://en.wikipedia.org/wiki/Apache_Kafka#Connect_API" id="Kafka" target="_blank">                                                                                   <i>/</i>Kafka </a>                         </div>
@@ -200,35 +158,5 @@
     <div><a href="https://developers.google.com/docs/api/how-tos/overview" target="_blank">                           <i>/</i>GoogleDocs_API </a>                   </div>
 
 </nav>
-
-
-
-
-
-@*<nav class="shinLinks">
-
-    <br />
-
-    @foreach (var link in links) {
-        if (link.debugBool == false) {
-            <a href=@link.aHref id=@link.aId>        <i>/</i>@link.aDisplayText </a>
-        }
-    }*@
-@*<a href="/" id="Home">   <img src="~/port19/Images/SVG/home-24px.svg" />            </a>*@
-
-@* @*<a href="/WebTechURLs" id="WebTechURLs"> <i>/</i>WebTechURLs</a>*@
-@* <a href="/StockItem" id="StockItem"> <i>/</i>StockItem                </a>*@
-@*   <a href="/Articles" id="Articles"> <i>/</i>Articles                </a>*@
-
-
-@*@if (ViewBag.IsDebug) {<debug class="debug">
-                @foreach (var link in links) {
-                    if (link.debugBool == true) {<a href=@link.aHref id=@link.aId><i>/</i>@link.aDisplayText </a>}
-            }
-            </debug>}
-
-
-
-    </nav>*@
 
 
