@@ -168,7 +168,8 @@ button {
   /*background: linear-gradient(0.74turn,#000000,#2d0700d6,rgb(2, 0, 10));*/
   background: #1c1c1c;
   /*background: linear-gradient(0.74turn,rgb(0, 0, 0),rgba(57, 9, 0, 0.84),rgba(25, 25, 25, 0.95));*/
-  background: linear-gradient(0.74turn, #2a1014, #21141e, #25112a);
+  /*background: linear-gradient(0.74turn, #2a1014, #21141e, #25112a);*/
+  background: linear-gradient(0.6turn, #402d4e, #2f2834, #2e212c);
   height: 100%;
   width: 100%;
 }
@@ -468,9 +469,10 @@ button {
   margin-top: -0.01%;
 }
 .resEdu li {
+  color:rgb(140,140,140);
   font-weight: 600;
   display: inline-block;
-  width: 45%;
+  width: auto;
   font-size: 11px;
 }
 .resEdu li:before {

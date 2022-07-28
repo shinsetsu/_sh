@@ -1,7 +1,7 @@
 ﻿
 
 <style>
-    
+
 
 
     #Home {
@@ -26,60 +26,57 @@
 
     .LLinks {
         font-family: 'IBM Plex Mono', monospace, 'Open Sans', sans-serif;
-        
-        
-        position: fixed;
+        float:left;
         z-index: 9001;
         color: #00f548d4;
-        width:1vw;
-        height:100vh;
-        width:10vw;
-        
+        width: 1vw;
+        height: 100vh;
+        width: 10vw;
         background-color: rgba(0, 0, 0, 0.27);
         border: .5px solid rgb(20, 20, 20);
         padding: .55% .75%;
+        padding-left:2vw;
         border-radius: 10px;
         z-index: 50000;
         position: static;
-        
-        
         background-color: rgb(0 0 0 / 37%);
         margin: 0;
-        display: flex;
-        justify-content: flex-start;
-        flex-wrap: wrap;
         border-radius: 0;
-        
         flex-direction: column;
     }
 
         .LLinks div {
-            outline:1px solid blue;
             width: auto;
             flex: auto;
             text-wrap: none !important;
         }
+
+            .LLinks div:first-of-type {
+                margin-top: 10vh;
+                outline: 1px solid red;
+            }
 
         .LLinks a {
             display: block;
             font-weight: 200;
             border: none;
             text-decoration: none;
-            outline:1px solid red;
             margin-bottom: .5vh;
             color: rgba(255, 255, 255, 0.83);
-            font-size: 10px;
+            font-size: 13px;
             letter-spacing: 1.7px;
             width: 100%;
-            
+            height: auto;
             text-wrap: none !important;
+            padding-top: .2vh;
+            padding-bottom: .1vh;
         }
 
             .LLinks a:hover {
                 color: #00FF9D;
             }
 
-   
+
 
 
 
@@ -91,10 +88,6 @@
     }
 
     @@media only screen and (max-width: 800px) {
-
-        .LLinks div {
-            width: 100%;
-        }
     }
 </style>
 
