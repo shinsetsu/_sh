@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "5YkcD4JJmPgQlhessB6OPLEL8ylU/GE6reTsB/OpU9Q=",
+  "Hash": "eSZg3hS8kfZc2v8M8tp+/kJ7hwjtF3+bEveqJfz9hOw=",
   "Source": "_StudioShinWeb",
   "BasePath": "_content/_StudioShinWeb",
   "Mode": "Default",
@@ -3213,12 +3213,12 @@
       "OriginalItemSpec": "wwwroot\\Res_new.css"
     },
     {
-      "Identity": "C:\\shinRepos\\_sh\\StudioShinWeb_project\\_StudioShinWeb\\wwwroot\\Res.css",
+      "Identity": "C:\\shinRepos\\_sh\\StudioShinWeb_project\\_StudioShinWeb\\wwwroot\\Res_old.css",
       "SourceId": "_StudioShinWeb",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\shinRepos\\_sh\\StudioShinWeb_project\\_StudioShinWeb\\wwwroot\\",
       "BasePath": "_content/_StudioShinWeb",
-      "RelativePath": "Res.css",
+      "RelativePath": "Res_old.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -3227,7 +3227,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Res.css"
+      "OriginalItemSpec": "wwwroot\\Res_old.css"
     },
     {
       "Identity": "C:\\shinRepos\\_sh\\StudioShinWeb_project\\_StudioShinWeb\\wwwroot\\Resume.jpg",
