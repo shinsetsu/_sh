@@ -5,45 +5,92 @@
 <script src="~/printThis.js"></script>
 
 <style>
-
-   resume .download {
-        width: 14%;
-        height: auto;
-        padding: 1% 0%;
+    resume {
+        font-family: monospace !important;
     }
 
-   resume .download a,
-        resume .download button {
-            background: black;
-            color: white;
-            border: none;
-            padding: 1% 4%;
-            font-size: 10px;
-            margin-top: 0%;
-            margin-bottom: 10%;
-            margin-left: 0;
+        resume #resHead p {
+            color: red !important;
+            font-family: monospace !important;
         }
 
-           resume .download a:hover,
-           resume .download button:hover {
-                color: #f600ff;
+
+        resume .resJob h1 {
+            color: gold !important;
+            font-family: monospace !important;
+        }
+
+        resume .resJob h2, resume .resJob a {
+            color: blue !important;
+            font-family: monospace !important;
+        }
+
+        resume .dateLocation span {
+            color: aqua !important;
+            font-family: monospace !important;
+        }
+
+
+        resume .jobDesc {
+            color: purple !important;
+            font-family: monospace !important;
+        }
+
+        resume .resJob li {
+            color: chartreuse !important;
+            font-family: monospace !important;
+        }
+
+        resume .bodyTitle {
+            color: orange !important;
+            font-family: monospace !important;
+        }
+
+
+        resume .resEdu h1, resume .resEdu a {
+            color: pink !important;
+            font-family: monospace !important;
+        }
+
+
+        resume .download {
+            width: 14%;
+            height: auto;
+            padding: 1% 0%;
+        }
+
+            resume .download a,
+            resume .download button {
+                background: black;
+                color: white;
+                border: none;
+                padding: 1% 4%;
+                font-size: 10px;
+                margin-top: 0%;
+                margin-bottom: 10%;
+                margin-left: 0;
             }
 
-       resume .download img {
-            height: 10px;
-            width: auto;
-            background: white;
-        }
+                resume .download a:hover,
+                resume .download button:hover {
+                    color: #f600ff;
+                }
 
-       resume .download a {
-            padding: 2% 4%;
-        }
+            resume .download img {
+                height: 10px;
+                width: auto;
+                background: white;
+            }
+
+            resume .download a {
+                padding: 2% 4%;
+            }
 </style>
 
 @*<link href="~/Res.css" rel="stylesheet" />*@
 <style>
 
-resume page {
+    resume page {
         size: A4;
     }
 
@@ -53,34 +100,34 @@ resume page {
     }
 
 
-   resume page img {
+    resume page img {
         height: 100%;
         width: 100%;
     }
 
-   resume page[size="A4"] {
+    resume page[size="A4"] {
         width: 210mm;
         height: 297mm;
         /*transform: scale(1.2);*/
         /*transform: scale(1.2);*/
         /*margin-top:6.6%;
-                        margin-bottom:10%;*/
+                                                        margin-bottom:10%;*/
         position: relative;
     }
 
-   resume #resume {
+    resume #resume {
         outline: 1px solid rgb(255 0 141 / 79%);
     }
 
-      resume  #resume:hover {
+        resume #resume:hover {
             outline: 1px solid #3cff00;
         }
 
-   resume * {
+    resume * {
         box-sizing: border-box;
     }
 
-   resume page {
+    resume page {
         background: white;
         display: block;
         margin: 0 auto;
@@ -90,17 +137,17 @@ resume page {
         box-sizing: border-box;
     }
 
-  resume #Artisan {
+    resume #Artisan {
         font-size: 11px;
         margin-bottom: 1%;
     }
 
-      resume  #Artisan o {
+        resume #Artisan o {
             font-size: 11px;
             color: black;
         }
 
-       resume #Artisan span {
+        resume #Artisan span {
             font-size: 10px;
         }
 
@@ -108,7 +155,7 @@ resume page {
         box-shadow: -0.1px 0px 10px 1px rgba(0, 0, 0, 0.75);
     }
 
-   resume .cv {
+    resume .cv {
         font-size: 24px;
         width: 35%;
         height: auto;
@@ -121,11 +168,11 @@ resume page {
         border-radius: 2px;
     }
 
-       resume .cv a {
+        resume .cv a {
             color: black;
         }
 
-       resume .cv div:nth-child(2) {
+        resume .cv div:nth-child(2) {
             padding: 1% 2%;
         }
 
@@ -137,18 +184,18 @@ resume page {
             line-height: 21px;
         }
 
-   resume l {
+    resume l {
         font-size: 14px;
         font-weight: bold;
     }
 
-   resume r {
+    resume r {
         float: right;
         font-size: 14px;
         font-weight: bold;
     }
 
-   resume .cv img {
+    resume .cv img {
         width: 94%;
         height: auto;
         display: block;
@@ -159,12 +206,12 @@ resume page {
         border-radius: 2px !important;
     }
 
-   resume .cv o {
+    resume .cv o {
         color: black;
         font-size: 13px;
     }
 
-   resume .edison {
+    resume .edison {
         position: absolute;
         top: 20%;
         right: 8%;
@@ -174,7 +221,7 @@ resume page {
         border-radius: 3px;
     }
 
-   resume .cv2 {
+    resume .cv2 {
         width: 35%;
         margin: auto;
         border-radius: 2px;
@@ -182,27 +229,27 @@ resume page {
         margin-bottom: 1%;
     }
 
-   resume .img {
+    resume .img {
         height: 200px;
         width: auto;
     }
 
-   resume button {
+    resume button {
         margin: 1% 3%;
         font-size: 12px;
     }
 
-   resume #res a:hover {
+    resume #res a:hover {
         color: deeppink;
     }
 
-  resume  #res {
+    resume #res {
         font-family: 'Muli';
         height: 100%;
         width: 100%;
     }
 
-   resume #resHead {
+    resume #resHead {
         display: flex;
         justify-content: space-between;
         width: 100%;
@@ -210,25 +257,23 @@ resume page {
         border-bottom: 1px solid rgb(62 49 0);
     }
 
-      resume  #resHead a {
-            letter-spacing: .4px;
+        resume #resHead a {
             font-weight: 600;
             color: black;
             text-shadow: none;
             font-weight: 200 !important;
-            letter-spacing: .5px;
             font-size: 9px;
             border: none;
         }
 
-       resume #resHead ul {
+        resume #resHead ul {
             text-align: end;
             list-style-type: none;
             margin-right: 10%;
             margin-top: -3%;
         }
 
-       resume #resHead li {
+        resume #resHead li {
             text-shadow: -1px 0px #0202028f 8f;
             font-size: 11px;
             padding: 1.5% 0;
@@ -238,7 +283,7 @@ resume page {
         margin-left: -12% !important;
     }
 
-   resume #resHeadBlock {
+    resume #resHeadBlock {
         float: left;
         display: none;
         height: 50px;
@@ -248,13 +293,13 @@ resume page {
         margin-top: -3%;
     }
 
-   resume #resHeadName {
+    resume #resHeadName {
         padding-top: 4%;
         height: 100%;
         width: 37.5%;
     }
 
-       resume #resHeadName p {
+        resume #resHeadName p {
             font-family: monspace;
             font-size: 9px;
             margin-left: 10%;
@@ -264,29 +309,29 @@ resume page {
             text-shadow: none;
         }
 
-          resume  #resHeadName p:first-of-type {
+            resume #resHeadName p:first-of-type {
                 margin-top: 1.5%;
             }
 
-  resume  #resHeadContact {
+    resume #resHeadContact {
         padding-top: 6%;
         height: 100%;
         width: 37.5%;
         margin-right: -13%;
     }
 
-   resume .w-25 {
+    resume .w-25 {
         height: 100%;
         width: 20%;
     }
 
-   resume .redBodyWrapper {
+    resume .redBodyWrapper {
         display: flex;
         justify-content: space-around;
         height: 86%;
     }
 
-   resume .resBody {
+    resume .resBody {
         width: 50%;
         height: 100%;
         float: left;
@@ -295,22 +340,22 @@ resume page {
         padding-top: 2.5%;
     }
 
-       resume .resBody:nth-child(1) {
+        resume .resBody:nth-child(1) {
             padding-top: 0;
         }
 
-      resume  .resBody a {
+        resume .resBody a {
             border-bottom: 0;
         }
 
-   resume .resvignetteWrapper {
+    resume .resvignetteWrapper {
         padding-top: 0%;
         width: 100%;
         height: 100%;
         display: flex;
     }
 
-   resume .resvignette {
+    resume .resvignette {
         position: relative;
         height: 110px;
         width: 110px;
@@ -320,7 +365,7 @@ resume page {
         overflow: hidden;
     }
 
-       resume .resvignette img {
+        resume .resvignette img {
             margin: auto;
             position: relative;
             border-radius: 29px;
@@ -328,35 +373,30 @@ resume page {
             height: auto;
         }
 
-   resume .bodyTitle {
-        font-weight: 800;
+    resume .bodyTitle {
+        
         font-size: 18px;
-        text-transform: uppercase;
-        word-spacing: 3px;
         color: black;
-        margin-bottom: 10px;
+        
     }
 
-   resume .resBody:nth-child(2) .bodyTitle {
+    resume .resBody:nth-child(2) .bodyTitle {
         margin-left: -8%;
     }
 
-   resume .resJob {
+    resume .resJob {
         width: 100%;
         height: auto;
         margin-top: -1.25%;
     }
 
-       resume .resJob h1 {
+        resume .resJob h1 {
             font-size: 14px;
             font-weight: 400;
-            letter-spacing: 1px;
             color: black;
-            letter-spacing: 0.7px;
-            word-spacing: -3px;
         }
 
-       resume .resJob h2, .resJob a {
+        resume .resJob h2, .resJob a {
             margin-top: -2.7%;
             margin-bottom: 5%;
             font-size: 14px;
@@ -364,13 +404,13 @@ resume page {
             color: black;
         }
 
-       resume .resJob a {
+        resume .resJob a {
             color: black;
             border: none;
             text-decoration: none;
         }
 
-   resume .dateLocation {
+    resume .dateLocation {
         margin-top: -3%;
         margin-bottom: 1.5%;
         font-style: italic;
@@ -379,7 +419,7 @@ resume page {
         padding: 0 2.5%;
     }
 
-       resume .dateLocation span {
+        resume .dateLocation span {
             color: black;
             font-weight: 200;
             text-indent: 0;
@@ -388,7 +428,7 @@ resume page {
 
 
 
-   resume .jobDesc {
+    resume .jobDesc {
         color: black;
         margin-top: -0.5%;
         text-align: left;
@@ -396,15 +436,15 @@ resume page {
         margin-bottom: 0;
     }
 
-   resume ul {
+    resume ul {
         color: black;
     }
 
-   resume .resJob ul {
+    resume .resJob ul {
         margin-left: -30px;
     }
 
-   resume .resJob li {
+    resume .resJob li {
         color: black;
         padding-top: 1.5%;
         font-weight: 200;
@@ -412,31 +452,31 @@ resume page {
         list-style: none;
     }
 
-   resume .achievements span {
+    resume .achievements span {
         font-size: 11px;
         font-style: italic;
         font-size: 9px;
     }
 
-   resume .nameTitle {
+    resume .nameTitle {
         font-size: 26px;
         margin-left: 16.5%;
         font-weight: 300;
         color: black;
     }
 
-   resume .resHeadIcon {
+    resume .resHeadIcon {
         height: 13px;
         width: auto;
         margin-bottom: -2px;
     }
 
-   resume #skills {
+    resume #skills {
         margin-top: 1%;
         margin-left: -50px;
     }
 
-      resume #skills li {
+        resume #skills li {
             width: auto;
             display: inline-block;
             background-color: #003341ba;
@@ -447,18 +487,18 @@ resume page {
             padding: 0 12.8px !important;
         }
 
-           resume #skills li p {
+            resume #skills li p {
                 font-size: 10px;
                 text-align: center;
                 width: auto;
             }
 
-   resume .pandaH {
+    resume .pandaH {
         margin-top: 0%;
         font-size: 11px;
     }
 
-   resume .pandaMonium {
+    resume .pandaMonium {
         float: right;
         width: 75px;
         height: auto;
@@ -469,17 +509,17 @@ resume page {
         box-shadow: -1px 1px 0.1cm 1px black, inset -1px -1px 0.1cm 5cm #35ffa2;
     }
 
-   resume .adobePortage {
+    resume .adobePortage {
         font-size: 9px;
         color: rgba(47, 214, 10, 0.68);
     }
 
-   resume .green,
-   resume .green p {
+    resume .green,
+    resume .green p {
         color: rgba(99, 210, 74, 0.68) !important;
     }
 
-   resume #portage {
+    resume #portage {
         text-decoration: line-through;
         font-size: 9px;
         color: black;
@@ -487,20 +527,20 @@ resume page {
 
 
 
-   resume .resEdu {
+    resume .resEdu {
         margin-top: -2%;
         margin-left: -8%;
         padding-bottom: 2%;
     }
 
-       resume .resEdu h1,
-       resume .resEdu h1 a {
+        resume .resEdu h1,
+        resume .resEdu h1 a {
             color: black;
             font-weight: 400;
             font-size: 13px;
         }
 
-       resume .resEdu h2 a {
+        resume .resEdu h2 a {
             margin-top: -2%;
             color: rgba(134, 134, 134, 0.93) !important;
             font-size: 15px;
@@ -508,489 +548,482 @@ resume page {
             margin-left: 1%;
         }
 
-      resume .resEdu a {
+        resume .resEdu a {
             font-weight: 600;
         }
 
-       resume .resEdu ul {
+        resume .resEdu ul {
             margin-left: -22px;
             margin-top: -0.01%;
         }
 
-       resume .resEdu li {
+        resume .resEdu li {
             font-weight: 600;
             display: inline-block;
             width: 45%;
             font-size: 11px;
         }
 
-           resume .resEdu li:before {
+            resume .resEdu li:before {
                 content: "•";
             }
 
-   resume .smGreyItalic {
+    resume .smGreyItalic {
         color: black;
         font-size: 10px;
         font-style: italic;
     }
 
-      resume .smGreyItalic a {
+        resume .smGreyItalic a {
             color: black;
         }
 
-   resume .resEdu h2 {
+    resume .resEdu h2 {
         margin-top: -2%;
         font-size: 16px;
-                font-weight: 400;
+        font-weight: 400;
     }
 
-   resume .resActivity {
+    resume .resActivity {
         margin-top: -2%;
         margin-left: -1%;
         padding-bottom: 2%;
         width: 100%;
     }
 
-       resume .resActivity h2 {
+        resume .resActivity h2 {
             font-size: 12px;
             font-weight: 500;
-        
         }
 
-       resume .resActivity .dateLocation {
+        resume .resActivity .dateLocation {
             margin-left: -2%;
             margin-top: 1%;
         }
 
-       resume .resActivity ul {
+        resume .resActivity ul {
             margin-left: -22px;
             margin-top: -1%;
         }
 
-      resume .resActivity li {
+        resume .resActivity li {
             display: inline-block;
             width: 45%;
             font-size: 11px;
         }
 
-           resume .resActivity li:before {
+            resume .resActivity li:before {
                 content: "•";
             }
 
-   resume .smGreyItalic {
+    resume .smGreyItalic {
         font-size: 10px;
         font-style: italic;
     }
 
-       resume .smGreyItalic a {
+        resume .smGreyItalic a {
             font-size: 10px;
         }
 
-   resume .resActivity .smGreyItalic {
+    resume .resActivity .smGreyItalic {
         margin-top: -2.5%;
     }
 
 </style>
 
 <resume>
-<div style="position:absolute;top:20%;left:5%;" class="download">
+    <div style="position:absolute;top:20%;left:5%;" class="download">
 
-    <button id="print"> Print to PDF        </button>
-    <br />
-
-
-    <a href="~/Zach_Johnson_Resume.pdf" target="_blank" download="~/Zach_Johnson_Resume.pdf" class="resumePDF">
-        <img src="~/AI_SVGs/get_app-24px.svg" />&nbsp;  Resume.pdf
-    </a>
-</div>
-<style>
-   resume page {
-        margin-top: 5%;
-    }
-</style>
+        <button id="print"> Print to PDF        </button>
+        <br />
 
 
+        <a href="~/Zach_Johnson_Resume.pdf" target="_blank" download="~/Zach_Johnson_Resume.pdf" class="resumePDF">
+            <img src="~/AI_SVGs/get_app-24px.svg" />&nbsp;  Resume.pdf
+        </a>
+    </div>
+    <style>
+        resume page {
+            margin-top: 5%;
+        }
+    </style>
 
 
 
-<page size="A4" id="resume">
-    <div id="res">
-
-        <div id="resHead">
-            <div id="resHeadName">
 
 
-                <span class="nameTitle">
-                    <a href="https://www.hex-rays.com/products/ida/" style="        font-size: 8px;
-        color: rgb(64 255 231);
-        letter-spacing:1px;
-        margin: 0;
-        padding: .2%;
-        margin-right: -2px;
-        vertical-align: top;"> ida </a>  Zach Johnson
-                </span>
-                <p> Full Stack Web | IT Systems </p>
+    <page size="A4" id="resume">
+        <div id="res">
 
-                <p>
-                    In the past I heavily worked Asp.net C# Razor, SQL, ECMA-262 ECMAScript, Web Api's , C++, C, & Python.
-                </p>
-
-            </div>
-            <div id="resHeadContact">
-                <ul>
-                    <li>
-                        <a href="mailto: shinsetsu@protonmail.com">
-                            shinsetsu@protonmail.com
-                            <img src="~/AI_SVGs/email-24px.svg" class="resHeadIcon" />
-                        </a>
-                    </li>
-                    <li style="color: #e0e0e0;letter-spacing:.9px;">
-                        502.291.2208
-                        <img src="~/AI_SVGs/phone_android-24px.svg" class="resHeadIcon" />
-                    </li>
-                    <li>
-                        <a href="http://www.studioshin.dev" target="_blank">
-                            www.studioshin.dev
-                            <img src="~/AI_SVGs/desktop_windows-24px.svg" class="resHeadIcon" />
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.github.com/shinsetsu" target="_blank">
-                            github.com/shinsetsu
-                            <img src="~/AI_SVGs/github-brands.svg" class="resHeadIcon" />
-                        </a>
-                    </li>
-
-                </ul>
-            </div>
-            <div class="w-25">
-                <div class="resvignetteWrapper">
-                    <style>
-                        .resvignette img {
-                            left: 9%;
-                            top: -3%;
-                            width: 84%;
-                            height: auto;
-                        }
-                    </style>
-                    <div class="resvignette">
-
-                        <img src="~/zjohnson9.png" />
-                    </div>
+            <div id="resHead">
+                <div id="resHeadName">
 
 
+                    <span class="nameTitle">
+                        Zach Johnson
+                    </span>
+                    <p> Full Stack Web | IT Systems </p>
+
+                    <p>
+                        In the past I heavily worked Asp.net C# Razor, SQL, ECMA-262 ECMAScript, Web Api's , C++, C, & Python.
+                    </p>
 
                 </div>
+                <div id="resHeadContact">
+                    <ul>
+                        <li>
+                            <a href="mailto: shinsetsu@protonmail.com">
+                                shinsetsu@protonmail.com
+                                <img src="~/AI_SVGs/email-24px.svg" class="resHeadIcon" />
+                            </a>
+                        </li>
+                        <li style="color: letter-spacing:.9px;">
+                            214.490.3232
+                            <img src="~/AI_SVGs/phone_android-24px.svg" class="resHeadIcon" />
+                        </li>
+                        <li>
+                            <a href="http://www.studioshin.dev" target="_blank">
+                                www.studioshin.dev
+                                <img src="~/AI_SVGs/desktop_windows-24px.svg" class="resHeadIcon" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.github.com/shinsetsu" target="_blank">
+                                github.com/shinsetsu
+                                <img src="~/AI_SVGs/github-brands.svg" class="resHeadIcon" />
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="w-25">
+                    <div class="resvignetteWrapper">
+                        <style>
+                            .resvignette img {
+                                left: 9%;
+                                top: -3%;
+                                width: 84%;
+                                height: auto;
+                            }
+                        </style>
+                        <div class="resvignette">
+
+                            <img src="~/zjohnson9.png" />
+                        </div>
+
+
+
+                    </div>
+                </div>
+
+
+
+
             </div>
 
+            <div class="redBodyWrapper">
+                <div class="resBody">
+                    @*<span class="bodyTitle">Experience</span>                <br />*@
 
 
+                    <div class="resJob">
 
-        </div>
+                        <h1>Web Applications Programmer</h1>
+                        <h2>
+                            <a href="https://www.artisantg.com" target="_blank">    Artisan Technology Group</a>
+                        </h2>
+                        <div class="dateLocation">
+                            <span>
+                                01/2019 – 05/2019
+                            </span>
+                            <span>Champaign, Illinois</span>
+                        </div>
 
-        <div class="redBodyWrapper">
-            <div class="resBody">
-                @*<span class="bodyTitle">Experience</span>                <br />*@
+                        <div class="jobDesc" id="Artisan">
+                            <o>Artisan;</o>
+                            <div>
+                                The Inventory: <o style="font-size:large">↴ </o><br />
 
+                                <div style="margin-left:.4vw;">
+                                    Legacy; Out-of-Production Electrical Hardware
+                                    Measurement equipment; <br />
+                                    Data Acquisition instruments;<br />
+                                    Process Control equipment; Analytical Instrumentation;<br />
+                                </div>
 
-                <div class="resJob">
+                                <br /> At Artisan I worked Asp.net Core C# Razor 3.1, ECMAscript 262, WebApi's, & BeautifulSoup.py<br />
+                                Updating <a href="https://www.artisantg.com/">artisanTG.com</a> </o>
+                            </div>
+                        </div>
 
-                    <h1>Web Applications Programmer</h1>
-                    <h2>
-                        <a href="https://www.artisantg.com" target="_blank">    Artisan Technology Group</a>
-                    </h2>
-                    <div class="dateLocation">
-                        <span>
-                            01/2019 – 05/2019
-                        </span>
-                        <span>Champaign, Illinois</span>
                     </div>
 
-                    <div class="jobDesc" id="Artisan">
-                        <o>Artisan;</o>
-                        <div>
-                            The Inventory: <o style="font-size:large">↴ </o><br />
+                    <div class="resJob">
 
-                            <div style="margin-left:.4vw;">
-                                Legacy; Out-of-Production Electrical Hardware
-                                Measurement equipment; <br />
-                                Data Acquisition instruments;<br />
-                                Process Control equipment; Analytical Instrumentation;<br />
-                            </div>
+                        <h1>Web Applications Developer </h1>
+                        <h2>Dynaﬂex Systems</h2>
+                        <div class="dateLocation">
+                            <span>02/2017 – 08/2017</span>
+                            <span>Louisville, Kentucky </span>
+                        </div>
 
-                            <br /> At Artisan I worked Asp.net Core C# Razor 3.1, ECMAscript 262, WebApi's, & BeautifulSoup.py<br />
-                            Updating <a href="https://www.artisantg.com/">artisanTG.com</a> </o>
+                        <div class="jobDesc">
+                            Contract work, Business Tools & Web Applications Programming.<br />  Small Contract
+                            <o class="Progen">Research</o>
+                        </div>
+                        <br />
+                        <ul>
+
+                            <li>
+                                Developed data displays using Asp.Net Core 1.0, JavaScript, & DHTMLX.
+                            </li>
+                        </ul>
+                    </div>
+
+
+
+                    <div class="resJob">
+
+                        <h1>ASP.NET Developer Internship - TTG</h1>
+                        <h2><a href="https://pressroom.ups.com/pressroom/ContentDetailsViewer.page?ConceptType=FactSheets&id=1426321566696-701" target="_blank"> UPS - Worldport  </a></h2>
+                        <div class="dateLocation">
+                            <span>03/2015 – 11/2015</span>
+                            <span>Louisville, Kentucky</span>
+                        </div>
+
+                        <div class="jobDesc">UPS International Air Operations</div>
+
+                        <ul>
+                            <li>
+                                Developed with ASP.NET MVC C#. Import; Track; Export;
+                                <br />Manage IT System Metrics &nbsp;&nbsp;&nbsp;
+                            </li>
+                            <li>
+                                Gathered & Created Business & Technical Requirements
+                                through weekly meetings.
+                            </li>
+                        </ul>
+                    </div>
+
+
+                    <div class="resJob">
+
+                        <h1>Software QA Internship</h1>
+                        <h2><a href="https://www.rawlingsgroup.com" target="_blank">The Rawlings Group</a></h2>
+                        <div class="dateLocation">
+                            <span>
+                                01/2014 – 06/2014
+                            </span>
+                            <span>Louisville, Kentucky</span>
+                        </div>
+
+                        <div class="jobDesc">
+                            The Insurance Recovery through Subrogation company. (A KY Pioneer)
+                        </div>
+
+                        <ul>
+                            <li>
+                                Testing of proprietary software, processes,
+                                <br /> & Business Logic for subrogation Data Mining.
+                            </li>
+                            <li>
+                                Utilized SQL Server, Microsoft TFS & Test Manager to test, track & log system bugs.
+                            </li>
+                        </ul>
+                    </div>
+
+
+
+                    <div class="resJob">
+
+                        <h1>Consultant and Digital Artist</h1>
+                        <h2><a href="https://renci.org" target="_blank">Renaissance Computing Institute, UNC </a></h2>
+                        <div class="dateLocation">
+                            <span>2011 – 2013</span>
+                            <span>Chapel Hill, North Carolina</span>
+                        </div>
+
+                        <div class="jobDesc">
+                            Renci develops & deploys adv. technologies to enable
+                            <o class="Progen">Research</o>
+                            discoveries.
+                        </div>
+
+                        <ul>
+                            <li>
+                                This was a As-Needed, that also granted access to equipment such as Windows HPC Clusters for employee growth.
+                            </li>
+                        </ul>
+                    </div>
+
+
+
+
+                    <div class="resJob" style="margin-top:3%;">
+
+
+                        <h2><a href="https://beckman.illinois.edu" target="_blank">Beckman Institute - ITG,  UIUC </a></h2>
+                        <div class="dateLocation">
+                            <span>
+                                2008 – 2010
+                            </span>
+                            <span>Champaign - Urbana, Illinois</span>
+                        </div>
+
+                        <div class="jobDesc">
+                            Beckman Institute is an interdisciplinary
+                            <o class="Progen">Research</o>
+                            institute devoted to leading-edge
+                            <o class="Progen">Research</o>
+                        </div>
+
+                        <ul>
+                            <li>
+                                MEL Scripting: particle effects, data manipulation, & to
+                                Automate Repetitive Task, Autodesk Maya.<br />    <o class="Progen">Distributed Render Farm Research</o> <br /> Simulations | Particles | Production Pipeline
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+
+
+                <div class="resBody">
+                    <span class="bodyTitle">Past Romance</span>
+
+                    <img src="~/pandamonium.jpg" class="pandaMonium" />
+                    <h3 class="pandaH"> Green highlights Future Interest</h3>
+                    <ul id="skills" class="pagination">
+
+
+
+                        <li> <p>                     Asp.Net Core                        </p> </li>
+                        <li> <p>                       C#                                  </p> </li>
+                        <li> <p>                       Razor                             </p>   </li>
+                        <li> <p>                       MVC                              </p>    </li>
+                        <li> <p>                       SSMS                             </p>    </li>
+                        <li> <p>                       SQL                             </p>    </li>
+                        <li> <p>                       IIS                              </p>    </li>
+                        <li> <p>                       Python                             </p>  </li>
+                        <li> <p>                       RegEX                             </p>   </li>
+                        <li> <p>                       Angular                             </p>   </li>
+                        <li> <p>                       Adobe <o id="portage">Collection</o>  <o class="adobePortage">Portage</o>          </p>         </li>
+
+                        <li class="green">          <p>              UI Tooling                            </p>    </li>
+                        <li class="green">          <p>              Page Tooling                            </p>    </li>
+
+                        <li class="green">           <p>             Os Tooling                           </p>     </li>
+                        <li> <p>                       touchOfAWS | EC2 | RDS | Elastic  </p></li>
+
+
+                    </ul>
+
+
+
+
+                    <span class="bodyTitle"> Education</span>
+
+                    <div class="resEdu">
+                        <h1>
+                            <a href="https://engineering.louisville.edu">
+                                Bachelors of Science <br /> Computer Engineering
+                                & Computer Science
+                            </a>
+                        </h1>
+                        <h2><a href="https://louisville.edu" target="_blank">University of Louisville</a></h2>
+                        <div class="dateLocation">
+                            <span>2012 - 2016  <o style="opacity:.5;color:rgb(123, 123, 123);">3 classes shy</o> </span>
+                            <span>Louisville, Kentucky</span>
+                        </div>
+
+                        <div class="smGreyItalic">107 of 123 Credit Hours Completed. In Total 215 College Credits.</div>
+                        <ul>
+                            <li>
+                                I completed my Senior Capstone in the Electrical Engineering Dept.
+                            </li>
+                            <li>
+                                Computer Science
+                            </li>
+                            <li> Methodical Approach</li>
+
+                        </ul>
+                    </div>
+
+                    <div class="resEdu">
+                        <h1>Associates in Applied Science</h1>
+                        <h2><a href="https://www.parkland.edu" target="_blank">Parkland College</a></h2>
+                        <div class="dateLocation">
+                            <span>2006 - 2010</span>
+                            <span>Louisville, Kentucky</span>
+                        </div>
+
+                        <div class="smGreyItalic">106 Credit Hours</div>
+                        <ul>
+                            <li>
+                                Computer Science
+                            </li>
+                            <li>    Math & Physics</li>
+                            <li>    Tradition & Digital Art</li>
+                            <li>    Japanese    </li>
+                        </ul>
+                    </div>
+
+
+
+
+
+
+                    <span class="bodyTitle"> Activities</span>
+
+
+                    <div class="resActivity">
+                        <h1>Developed Request-a-Quote site for AAG</h1>
+                        <div class="smGreyItalic">
+                            ASP.NET C#, Angular - <a href="http://quote.aagrilles.com">http://quote.aagrilles.com</a>
+                        </div>
+
+                        <div class="dateLocation">
+                            <span>(06/2016 – 06/2016)</span>
                         </div>
                     </div>
 
+
+
+
+                    <div class="resActivity">
+                        <h1>Member, Cyber Defense Team at UofL</h1>
+                        <div class="smGreyItalic">
+                            SysAdmin, Networks, Virtual OS, ect..
+                        </div>
+                        <div class="dateLocation">
+                            <span>(06/2014 – 01/2017)</span>
+                        </div>
+                    </div>
+
+
+                    <div class="resActivity">
+                        <h1>Coursera Heterogeneous Parallel Programming</h1>
+                        <div class="smGreyItalic" style="color: #0aa6a9;">
+                            C Cuda Programming - <a href="https://goo.gl/KD4LNj">https://goo.gl/KD4LNj</a>
+                        </div>
+                        <div class="dateLocation">
+                            <span>(01/2014 – 03/2014)</span>
+                        </div>
+                    </div>
+                    <img src="~/CourseraHeterogenous_sm.jpg" style="height: 100px; margin-left:150px;margin-top:-12px; width: auto;" />
+
                 </div>
-
-                <div class="resJob">
-
-                    <h1>Web Applications Developer </h1>
-                    <h2>Dynaﬂex Systems</h2>
-                    <div class="dateLocation">
-                        <span>02/2017 – 08/2017</span>
-                        <span>Louisville, Kentucky </span>
-                    </div>
-
-                    <div class="jobDesc">
-                        Contract work, Business Tools & Web Applications Programming.<br />  Small Contract
-                        <o class="Progen">Research</o>
-                    </div>
-                    <br />
-                    <ul>
-
-                        <li>
-                            Developed data displays using Asp.Net Core 1.0, JavaScript, & DHTMLX.
-                        </li>
-                    </ul>
-                </div>
-
-
-
-                <div class="resJob">
-
-                    <h1>ASP.NET Developer Internship - TTG</h1>
-                    <h2><a href="https://pressroom.ups.com/pressroom/ContentDetailsViewer.page?ConceptType=FactSheets&id=1426321566696-701" target="_blank"> UPS - Worldport  </a></h2>
-                    <div class="dateLocation">
-                        <span>03/2015 – 11/2015</span>
-                        <span>Louisville, Kentucky</span>
-                    </div>
-
-                    <div class="jobDesc">UPS International Air Operations</div>
-
-                    <ul>
-                        <li>
-                            Developed with ASP.NET MVC C#. Import; Track; Export;
-                            <br />Manage IT System Metrics &nbsp;&nbsp;&nbsp;
-                        </li>
-                        <li>
-                            Gathered & Created Business & Technical Requirements
-                            through weekly meetings.
-                        </li>
-                    </ul>
-                </div>
-
-
-                <div class="resJob">
-
-                    <h1>Software QA Internship</h1>
-                    <h2><a href="https://www.rawlingsgroup.com" target="_blank">The Rawlings Group</a></h2>
-                    <div class="dateLocation">
-                        <span>
-                            01/2014 – 06/2014
-                        </span>
-                        <span>Louisville, Kentucky</span>
-                    </div>
-
-                    <div class="jobDesc">
-                        The Insurance Recovery through Subrogation company. (A KY Pioneer)
-                    </div>
-
-                    <ul>
-                        <li>
-                            Testing of proprietary software, processes,
-                            <br /> & Business Logic for subrogation Data Mining.
-                        </li>
-                        <li>
-                            Utilized SQL Server, Microsoft TFS & Test Manager to test, track & log system bugs.
-                        </li>
-                    </ul>
-                </div>
-
-
-
-                <div class="resJob">
-
-                    <h1>Consultant and Digital Artist</h1>
-                    <h2><a href="https://renci.org" target="_blank">Renaissance Computing Institute, UNC </a></h2>
-                    <div class="dateLocation">
-                        <span>2011 – 2013</span>
-                        <span>Chapel Hill, North Carolina</span>
-                    </div>
-
-                    <div class="jobDesc">
-                        Renci develops & deploys adv. technologies to enable
-                        <o class="Progen">Research</o>
-                        discoveries.
-                    </div>
-
-                    <ul>
-                        <li>
-                            This was a As-Needed, that also granted access to equipment such as Windows HPC Clusters for employee growth.
-                        </li>
-                    </ul>
-                </div>
-
-
-
-
-                <div class="resJob" style="margin-top:3%;">
-
-
-                    <h2><a href="https://beckman.illinois.edu" target="_blank">Beckman Institute - ITG,  UIUC </a></h2>
-                    <div class="dateLocation">
-                        <span>
-                            2008 – 2010
-                        </span>
-                        <span>Champaign - Urbana, Illinois</span>
-                    </div>
-
-                    <div class="jobDesc">
-                        Beckman Institute is an interdisciplinary
-                        <o class="Progen">Research</o>
-                        institute devoted to leading-edge
-                        <o class="Progen">Research</o>
-                    </div>
-
-                    <ul>
-                        <li>
-                            MEL Scripting: particle effects, data manipulation, & to
-                            Automate Repetitive Task, Autodesk Maya.<br />    <o class="Progen">Distributed Render Farm Research</o> <br /> Simulations | Particles | Production Pipeline
-                        </li>
-                    </ul>
-                </div>
-
-            </div>
-
-
-
-            <div class="resBody">
-                <span class="bodyTitle">Past Romance</span>
-
-                <img src="~/pandamonium.jpg" class="pandaMonium" />
-                <h3 class="pandaH"> Green highlights Future Interest</h3>
-                <ul id="skills" class="pagination">
-
-
-
-                    <li> <p>                     Asp.Net Core                        </p> </li>
-                    <li> <p>                       C#                                  </p> </li>
-                    <li> <p>                       Razor                             </p>   </li>
-                    <li> <p>                       MVC                              </p>    </li>
-                    <li> <p>                       SSMS                             </p>    </li>
-                    <li> <p>                       SQL                             </p>    </li>
-                    <li> <p>                       IIS                              </p>    </li>
-                    <li> <p>                       Python                             </p>  </li>
-                    <li> <p>                       RegEX                             </p>   </li>
-                    <li> <p>                       Angular                             </p>   </li>
-                    <li> <p>                       Adobe <o id="portage">Collection</o>  <o class="adobePortage">Portage</o>          </p>         </li>
-
-                    <li class="green">          <p>              UI Tooling                            </p>    </li>
-                    <li class="green">          <p>              Page Tooling                            </p>    </li>
-
-                    <li class="green">           <p>             Os Tooling                           </p>     </li>
-                    <li> <p>                       touchOfAWS | EC2 | RDS | Elastic  </p></li>
-
-
-                </ul>
-
-
-
-
-                <span class="bodyTitle"> Education</span>
-
-                <div class="resEdu">
-                    <h1>
-                        <a href="https://engineering.louisville.edu">
-                            Bachelors of Science <br /> Computer Engineering
-                            & Computer Science
-                        </a>
-                    </h1>
-                    <h2><a href="https://louisville.edu" target="_blank">University of Louisville</a></h2>
-                    <div class="dateLocation">
-                        <span>2012 - 2016  <o style="opacity:.5;color:rgb(123, 123, 123);">3 classes shy</o> </span>
-                        <span>Louisville, Kentucky</span>
-                    </div>
-
-                    <div class="smGreyItalic">107 of 123 Credit Hours Completed. In Total 215 College Credits.</div>
-                    <ul>
-                        <li>
-                            I completed my Senior Capstone in the Electrical Engineering Dept.
-                        </li>
-                        <li>
-                            Computer Science
-                        </li>
-                        <li> Methodical Approach</li>
-
-                    </ul>
-                </div>
-
-                <div class="resEdu">
-                    <h1>Associates in Applied Science</h1>
-                    <h2><a href="https://www.parkland.edu" target="_blank">Parkland College</a></h2>
-                    <div class="dateLocation">
-                        <span>2006 - 2010</span>
-                        <span>Louisville, Kentucky</span>
-                    </div>
-
-                    <div class="smGreyItalic">106 Credit Hours</div>
-                    <ul>
-                        <li>
-                            Computer Science
-                        </li>
-                        <li>    Math & Physics</li>
-                        <li>    Tradition & Digital Art</li>
-                        <li>    Japanese    </li>
-                    </ul>
-                </div>
-
-
-
-
-
-
-                <span class="bodyTitle"> Activities</span>
-
-
-                <div class="resActivity">
-                    <h1>Developed Request-a-Quote site for AAG</h1>
-                    <div class="smGreyItalic">
-                        ASP.NET C#, Angular - <a href="http://quote.aagrilles.com">http://quote.aagrilles.com</a>
-                    </div>
-
-                    <div class="dateLocation">
-                        <span>(06/2016 – 06/2016)</span>
-                    </div>
-                </div>
-
-
-
-
-                <div class="resActivity">
-                    <h1>Member, Cyber Defense Team at UofL</h1>
-                    <div class="smGreyItalic">
-                        SysAdmin, Networks, Virtual OS, ect..
-                    </div>
-                    <div class="dateLocation">
-                        <span>(06/2014 – 01/2017)</span>
-                    </div>
-                </div>
-
-
-                <div class="resActivity">
-                    <h1>Coursera Heterogeneous Parallel Programming</h1>
-                    <div class="smGreyItalic" style="color: #0aa6a9;">
-                        C Cuda Programming - <a href="https://goo.gl/KD4LNj">https://goo.gl/KD4LNj</a>
-                    </div>
-                    <div class="dateLocation">
-                        <span>(01/2014 – 03/2014)</span>
-                    </div>
-                </div>
-                <img src="~/CourseraHeterogenous_sm.jpg" style="height: 100px; margin-left:150px;margin-top:-12px; width: auto;" />
-
             </div>
         </div>
-    </div>
 
 
 
-</page>
+    </page>
 
 
 
-        </resume>
+</resume>
 
 
 
@@ -1223,4 +1256,3 @@ resume page {
 
 </script>
 
-        
