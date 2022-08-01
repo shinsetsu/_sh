@@ -1,0 +1,565 @@
+﻿
+    resume page {
+        size: A4;
+    }
+
+
+    resume body {
+        font-family: 'IBM Plex Mono', monospace, 'Open Sans', sans-serif;
+    }
+
+
+    resume page img {
+        height: 100%;
+        width: 100%;
+    }
+
+    resume page[size="A4"] {
+        width: 210mm;
+        height: 297mm;
+        /*transform: scale(1.2);*/
+        /*transform: scale(1.2);*/
+        /*margin-top:6.6%;
+                                                            margin-bottom:10%;*/
+        position: relative;
+    }
+
+    resume #resume {
+        outline: 1px solid rgb(255 0 141 / 79%);
+    }
+
+        resume #resume:hover {
+            outline: 1px solid #3cff00;
+        }
+
+    resume * {
+        box-sizing: border-box;
+    }
+
+    resume page {
+        background: white;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 0.5cm;
+        box-shadow: 0 0 0.5cm rgba(0, 0, 0, 0.5);
+        border: 1px solid #313131;
+        box-sizing: border-box;
+    }
+
+    resume #Artisan {
+        font-size: 11px;
+        margin-bottom: 1%;
+    }
+
+        resume #Artisan o {
+            font-size: 11px;
+            color: black;
+        }
+
+        resume #Artisan span {
+            font-size: 10px;
+        }
+
+    resume.img {
+        box-shadow: -0.1px 0px 10px 1px rgba(0, 0, 0, 0.75);
+    }
+
+    resume .cv {
+        font-size: 24px;
+        width: 35%;
+        height: auto;
+        margin: auto;
+        margin-bottom: 3%;
+        list-style: none;
+        overflow: hidden;
+        margin-bottom: 4%;
+        color: black;
+        border-radius: 2px;
+    }
+
+        resume .cv a {
+            color: black;
+        }
+
+        resume .cv div:nth-child(2) {
+            padding: 1% 2%;
+        }
+
+        resume .cv p {
+            padding: 0 2%;
+            color: black;
+            font-size: 14px;
+            font-weight: 200;
+            line-height: 21px;
+        }
+
+    resume l {
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    resume r {
+        float: right;
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    resume .cv img {
+        width: 94%;
+        height: auto;
+        display: block;
+        border: 1px solid rgba(11, 11, 11, 0.39);
+        margin: auto;
+        margin-bottom: 30px;
+        margin-top: 2%;
+        border-radius: 2px !important;
+    }
+
+    resume .cv o {
+        color: black;
+        font-size: 13px;
+    }
+
+    resume .edison {
+        position: absolute;
+        top: 20%;
+        right: 8%;
+        z-index: -1;
+        width: 28%;
+        height: auto;
+        border-radius: 3px;
+    }
+
+    resume .cv2 {
+        width: 35%;
+        margin: auto;
+        border-radius: 2px;
+        padding: 1%;
+        margin-bottom: 1%;
+    }
+
+    resume .img {
+        height: 200px;
+        width: auto;
+    }
+
+    resume button {
+        margin: 1% 3%;
+        font-size: 12px;
+    }
+
+    resume #res a:hover {
+        color: deeppink;
+    }
+
+    resume #res {
+        font-family: 'Muli';
+        height: 100%;
+        width: 100%;
+    }
+
+    resume #resHead {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 14%;
+        border-bottom: 1px solid rgb(62 49 0);
+    }
+
+        resume #resHead a {
+            font-weight: 600;
+            color: black;
+            text-shadow: none;
+            font-weight: 200 !important;
+            font-size: 12px;
+            border: none;
+        }
+
+        resume #resHead ul {
+            text-align: end;
+            list-style-type: none;
+            margin-right: 10%;
+            margin-top: -3%;
+        }
+
+        resume #resHead li {
+            text-shadow: -1px 0px #0202028f 8f;
+            font-size: 11px;
+            padding: 1.5% 0;
+        }
+
+    resume h1 {
+        margin-left: -12% !important;
+    }
+
+    resume #resHeadBlock {
+        float: left;
+        display: none;
+        height: 50px;
+        width: 30px;
+        margin-right: -30px;
+        position: relative;
+        margin-top: -3%;
+    }
+
+    resume #resHeadName {
+        padding-top: 4%;
+        height: 100%;
+        width: 37.5%;
+    }
+
+        resume #resHeadName p {
+            font-family: monspace;
+            font-size: 12px;
+            margin-left: 10%;
+            margin-bottom: 0%;
+            margin-top: 6px;
+            color: black;
+            text-shadow: none;
+        }
+
+            resume #resHeadName p:first-of-type {
+                margin-top: 1.5%;
+            }
+
+    resume #resHeadContact {
+        padding-top: 6%;
+        height: 100%;
+        width: 37.5%;
+        margin-right: -13%;
+    }
+
+    resume .w-25 {
+        height: 100%;
+        width: 20%;
+    }
+
+    resume .redBodyWrapper {
+        display: flex;
+        justify-content: space-around;
+        height: 86%;
+    }
+
+    resume .resBody {
+        width: 50%;
+        height: 100%;
+        float: left;
+        padding-left: 7.5%;
+        padding-right: 3%;
+        padding-top: 2.5%;
+    }
+
+        resume .resBody:nth-child(1) {
+            padding-top: 0;
+        }
+
+        resume .resBody a {
+            border-bottom: 0;
+        }
+
+    resume .resvignetteWrapper {
+        padding-top: 0%;
+        width: 100%;
+        height: 100%;
+        display: flex;
+    }
+
+    resume .resvignette {
+        position: relative;
+        height: 110px;
+        width: 110px;
+        border: 0.9px solid rgb(0 195 204);
+        margin: auto;
+        border-radius: 55px;
+        overflow: hidden;
+    }
+
+        resume .resvignette img {
+            margin: auto;
+            position: relative;
+            border-radius: 29px;
+            width: 77%;
+            height: auto;
+        }
+
+    resume .bodyTitle {
+        font-size: 18px;
+        color: black;
+    }
+
+
+    resume .resBody:nth-child(2) .bodyTitle {
+        margin-left: -8%;
+    }
+
+    resume .resJob {
+        width: 100%;
+        height: auto;
+            margin-top: 5.75%;
+    }
+
+        resume .resJob h1 {
+            font-size: 15px;
+            font-weight: 600;
+            color: black;
+            
+        }
+
+        resume .resJob h2, .resJob a {
+            margin-top: -2.7%;
+            margin-bottom: 5%;
+            font-size: 14px;
+            font-weight: 200;
+            color: black;
+        }
+
+        resume .resJob a {
+            color: black;
+            border: none;
+            text-decoration: none;
+        }
+
+    resume .dateLocation {
+        margin-top: -3%;
+        margin-bottom: 1.5%;
+        font-style: italic;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 2.5%;
+    }
+
+        resume .dateLocation span {
+            color: black;
+            font-weight: 200;
+            text-indent: 0;
+            font-size: 10px;
+        }
+
+
+
+    resume .jobDesc {
+        color: black;
+        margin-top: -0.5%;
+        text-align: left;
+        font-size: 9px;
+        margin-bottom: 0;
+    }
+
+    resume ul {
+        color: black;
+    }
+
+    resume .resJob ul {
+        margin-left: -30px;
+    }
+
+    resume .resJob li {
+        color: black;
+        padding-top: 0;
+        font-weight: 200;
+        font-size: 10px;
+        list-style: none;
+    }
+
+    resume .achievements span {
+        font-size: 11px;
+        font-style: italic;
+        font-size: 9px;
+    }
+
+    resume .nameTitle {
+        font-size: 26px;
+        margin-left: 16.5%;
+        font-weight: 300;
+        color: black;
+    }
+
+    resume .resHeadIcon {
+        height: 13px;
+        width: auto;
+        margin-bottom: -2px;
+    }
+
+    resume #skills {
+        margin-top: 1%;
+        margin-left: -60px;
+        
+    }
+
+        resume #skills li {
+            display: inline-block;
+            background-color: #a7ff00ba;
+            color: black;
+            border-radius: 20px;
+            font-size: 12px;
+            margin-bottom: 8px;
+            padding: 0 12.8px !important;
+        }
+
+            resume #skills li p {
+                font-size: 10px;
+                text-align: center;
+                width: auto;
+            }
+
+    resume . h1 {
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    resume .pandaH {
+        margin-top: 0%;
+        font-size: 11px;
+    }
+
+    resume .pandaMonium {
+        float: right;
+        width: 75px;
+        height: auto;
+        margin-right: -2%;
+        margin-top: -1%;
+        border-radius: 100px;
+        border: 1px solid rgba(0, 0, 0, 0.66);
+        box-shadow: -1px 1px 0.1cm 1px black, inset -1px -1px 0.1cm 5cm #35ffa2;
+    }
+
+    resume .adobePortage {
+        font-size: 9px;
+        color: rgba(47, 214, 10, 0.68);
+    }
+
+    resume .green,
+    resume .green p {
+        color: rgba(99, 210, 74, 0.68) !important;
+    }
+
+    resume #portage {
+        text-decoration: line-through;
+        font-size: 9px;
+        color: black;
+    }
+
+
+
+    resume .resEdu {
+        margin-top: -2%;
+        margin-left: -8%;
+        padding-bottom: 2%;
+    }
+
+        resume .resEdu h1,
+        resume .resEdu h1 a {
+            color: black;
+            font-weight: 400;
+            font-size: 13px;
+        }
+
+        resume .resEdu h2 a {
+            margin-top: -2%;
+            color:black;
+            font-size: 15px;
+            font-weight: 400;
+            margin-left: 1%;
+        }
+
+        resume .resEdu a {
+            font-weight: 600;
+        }
+
+        resume .resEdu ul {
+            margin-left: -22px;
+        }
+
+        resume .resEdu li {
+            color:black;
+            font-weight: 200;
+            display: inline-block;
+            width: 100%;
+            padding-bottom:2%;
+            font-size: 11px;
+        }
+
+            resume .resEdu li:before {
+                content: "•";
+            }
+
+    resume .smGreyItalic {
+        color: black;
+        font-size: 10px;
+        font-style: italic;
+    }
+
+        resume .smGreyItalic a {
+            color: black;
+        }
+
+    resume .resEdu h2 {
+        margin-top: -2%;
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    resume .resActivity {
+        margin-top: -2%;
+        margin-left: -1%;
+        padding-bottom: 2%;
+        width: 100%;
+    }
+
+        resume .resActivity h2 {
+            font-size: 12px;
+            font-weight: 500;
+        }
+
+        resume .resActivity .dateLocation {
+            margin-left: -2%;
+            margin-top: 1%;
+        }
+
+        resume .resActivity ul {
+            margin-left: -22px;
+            margin-top: -1%;
+        }
+
+        resume .resActivity li {
+            display: inline-block;
+            width: 45%;
+            font-size: 11px;
+        }
+
+            resume .resActivity li:before {
+                content: "•";
+            }
+
+    resume .smGreyItalic {
+        font-size: 10px;
+        font-style: italic;
+    }
+
+        resume .smGreyItalic a {
+            font-size: 10px;
+        }
+
+    resume .resActivity .smGreyItalic {
+        margin-top: -2.5%;
+    }
+
+    .parkland li {
+        width: 45%!important;
+        
+    }
+    resume h1{font-size:14px;}
+
+
+    
+@media print {
+  a {
+    border-bottom: none;
+  }
+
+  page {
+    border: none;
+    height: 100%;
+    width: 100%;
+  }
+}
