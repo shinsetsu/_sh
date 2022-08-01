@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "T/TjXsyM3BquA/D/lpm9Vk8G3Ahm4hlfZlt1m9iB8Vo=",
+  "Hash": "81DwZqt+wy4OZladu5YyFYRlum9w9tWhSC49fhwidC0=",
   "Source": "_StudioShinWeb",
   "BasePath": "_content/_StudioShinWeb",
   "Mode": "Default",
@@ -3196,23 +3196,6 @@
       "OriginalItemSpec": "wwwroot\\Ref.min.css"
     },
     {
-      "Identity": "C:\\shinRepos\\_sh\\StudioShinWeb_project\\_StudioShinWeb\\wwwroot\\Res.css",
-      "SourceId": "_StudioShinWeb",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\shinRepos\\_sh\\StudioShinWeb_project\\_StudioShinWeb\\wwwroot\\",
-      "BasePath": "_content/_StudioShinWeb",
-      "RelativePath": "Res.css",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Res.css"
-    },
-    {
       "Identity": "C:\\shinRepos\\_sh\\StudioShinWeb_project\\_StudioShinWeb\\wwwroot\\Res_new.css",
       "SourceId": "_StudioShinWeb",
       "SourceType": "Discovered",
@@ -3228,6 +3211,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Res_new.css"
+    },
+    {
+      "Identity": "C:\\shinRepos\\_sh\\StudioShinWeb_project\\_StudioShinWeb\\wwwroot\\Res_old.css",
+      "SourceId": "_StudioShinWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\shinRepos\\_sh\\StudioShinWeb_project\\_StudioShinWeb\\wwwroot\\",
+      "BasePath": "_content/_StudioShinWeb",
+      "RelativePath": "Res_old.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Res_old.css"
     },
     {
       "Identity": "C:\\shinRepos\\_sh\\StudioShinWeb_project\\_StudioShinWeb\\wwwroot\\Resume.jpg",
