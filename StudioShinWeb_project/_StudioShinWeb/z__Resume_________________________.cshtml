@@ -1,6 +1,6 @@
-﻿@{
+﻿@*@{
     Layout = "■__SM_________.cshtml";
-}
+}*@
 
 <script src="~/printThis.js"></script>
 
@@ -117,14 +117,14 @@
                                                                 margin-bottom:10%;*/
         position: relative;
     }
-
+/*
     resume #resume {
         outline: 1px solid rgb(255 0 141 / 79%);
-    }
-
+    }*/
+/*
         resume #resume:hover {
             outline: 1px solid #3cff00;
-        }
+        }*/
 
     resume * {
         box-sizing: border-box;
@@ -135,8 +135,8 @@
         display: block;
         margin: 0 auto;
         margin-bottom: 0.5cm;
-        box-shadow: 0 0 0.5cm rgba(0, 0, 0, 0.5);
-        border: 1px solid #313131;
+        /*box-shadow: 0 0 0.5cm rgba(0, 0, 0, 0.5);*/
+        /*border: 1px solid #313131;*/
         box-sizing: border-box;
     }
 
@@ -277,7 +277,7 @@
         }
 
         resume #resHead li {
-            text-shadow: -1px 0px #0202028f 8f;
+            text-shadow: -1px 0px #0202028f;
             font-size: 11px;
             padding: 1.5% 0;
         }
@@ -494,7 +494,7 @@
                 width: auto;
             }
 
-    resume . h1 {
+    resume .h1 {
         font-size: 14px;
         font-weight: 400;
     }
@@ -649,12 +649,9 @@
 
 </style>
 
-<link href="~/Res_current.css" rel="stylesheet" />
-<style>
 
-</style>
 
-<resume>
+<resume>@*
     <div style="position:absolute;top:20%;left:5%;" class="download">
 
         <button id="print"> Print to PDF        </button>
@@ -671,7 +668,7 @@
         }
     </style>
 
-
+*@
 
 
 
@@ -694,7 +691,7 @@
                 </div>
                 <div id="resHeadContact">
                     <ul>
-                        <li style="color: letter-spacing:.9px;">
+                        <li style="letter-spacing:.9px;">
                             214.490.3232
                             <img src="~/AI_SVGs/phone_android-24px.svg" class="resHeadIcon" />
                         </li>
@@ -770,7 +767,7 @@
                                 Artisan also develops their website for re-selling of Electronics, Data Acquisition Equipment, and various Manufacturing items.
 
                                 <br /><br /> At Artisan I worked Asp.net Core C# Razor 3.1, ECMAscript 262, WebApi's, & BeautifulSoup.py<br />
-                                <br />Updating <a href="https://www.artisantg.com/">artisanTG.com</a> </o>
+                                <br />Updating <a href="https://www.artisantg.com/">artisanTG.com</a> 
                             </div>
                         </div>
 
@@ -1245,10 +1242,10 @@
         $('page').printThis(
             {
                 printContainer: false,       // print outer container/$.selector
-                importCSS: true,            // import parent page css
+                //importCSS: true,            // import parent page css
                 importStyle: true,         // import style tags
                 removeInline: false,        // remove inline styles from print elements
-                loadCSS: "/Res_current.css",                // path to additional css file - use an array [] for multiple
+                loadCSS: "Res_current.css",                // path to additional css file - use an array [] for multiple
                 removeScripts: false,       // remove script tags from print content
             })
 
