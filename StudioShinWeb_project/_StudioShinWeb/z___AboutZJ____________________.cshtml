@@ -84,21 +84,24 @@
                             .pitch h3 {
                                 background-color: black;
                                 font-weight: 200;
-                                color: grey;
-                                font-size: 13px;
+                                color: #20d156;
+                                font-size: 14px;
+                                line-height:19px;
                                 margin-left: 2vw;
+                                margin-bottom:0;
+                                margin-top:0;
                                 margin-right: 2vw;
-                                padding-right: .5vw;
-                                padding-left: .5vw;
+                                padding-right: 2vw;
+                                padding-left: 2vw;
                                 padding-bottom: 1vh;
                                 padding-top: 1vh;
                             }
                         </style>
 
                         <h3>
-                            This webpage is intended to give a bit of info about myself,
+                            This web-page is intended to give a bit of info about myself,
                             and be a working area for creating new pages / layouts for things.
-                            <br /> This is a working page, some items are in temporary positons in the pages layout.
+                            <br /> This is a working page, some items are in temporary positions in the pages layout.
                             <br /> I like to keep my layout full of color, and will be adding more Data Driven items as I am able to.
                         </h3>
                         <h3>
@@ -107,25 +110,24 @@
                             <br />  I work in Visual Studio, and prefer to build most things from the grounds up.
                             <br />  I have a personal preference towards C# over VB, but can work with both.
 
-                            <br /><br />  Youll see on my Resume that
+                            <br /><br />  You'll see on my Resume that
 
-                            <br />  In my past I have worked as a Digital Artist creating Science Visualizations using Maya, Mentral Ray, Photoshop, and Nuke for compositing.
-                            <br />  My most reccent experiences are working with  Asp.net Web Applications, where I both design the layouts / Frontend and Wire the Backend | Database up to work with the application.
+                            <br />  In my past I have worked as a Digital Artist creating Science Visualizations using Maya, Mental Ray, Photoshop, and Nuke for compositing.
+                            <br />  My most recent experiences are working with  Asp.net Web Applications, where I both design the layouts / Frontend and Wire the Backend | Database up to work with the application.
                             <br />  Naturally I also have a background in Information Technology and experience working with technologies listed below.
                         </h3>
                         <h3>
-                                     I went to the University of Louisville for Computer Engineering, and alltogether spent about 8yrs taking College Courses.
+                                     I went to the University of Louisville for Computer Engineering, and all together spent about 8yrs taking College Courses.
                             <br />   I have studied heavily for Comptia Security+ & Network+. I have taken a practice bank of 1200 questions ~80% score.
                             <br />   I have yet to take the exams due to cost. I would be able to get both certifications within 3 weeks of starting if needed.
                         </h3>
-                        <h3>
-                        </h3>
+                        
 
                         <div>
                             <img src="~/sanHat.jpg" class="zjohnson" style="float:right;width:20vw;height:auto;" />
 
                             <h2>
-                                I am availiable for work Remotely, <br />
+                                I am available for work Remotely, <br />
                                 <o style="margin-left: 7.3vw;">   and in Dallas, Texas</o><br />
                                 <br /><br />                        What Do you Work with?
                                 <br />                        Can I become Part of it?
@@ -157,28 +159,38 @@
 
 
                 </div>
-                <p class="bodyText" style="margin-top:6%;margin-bottom:2%;">                <a href="/resume" class="resume"><img src="~/Resume.jpg" /></a>                Business Problems we can work together on Engineering a Solution?<br />                Things I can Fire AT?<br />                Feel free to contact me by phone or email & let's begin working together.<br /><br />                For the most part, I just like to Build Stuff.<br /><br />            </p>
+               @* <p class="bodyText" style="margin-top:6%;margin-bottom:2%;">                <a href="/resume" class="resume"><img src="~/Resume.jpg" /></a>                Business Problems we can work together on Engineering a Solution?<br />                Things I can Fire AT?<br />                Feel free to contact me by phone or email & let's begin working together.<br /><br />                For the most part, I just like to Build Stuff.<br /><br />            </p>
 
                 <div class="reccentFocus" style="background-color: #0e3919; padding-top: .5vh; padding-bottom: 4vh; padding-left: 1.9vw;">
                     <h2>  Recently working the<b> Microsoft</b> stack:</h2>   <h3>    Asp.Net C# MVC  <a href=@ViewBag.Razorhref target="b"> (￣ー￣)  Razor  </a>   <br />    SQL WebAPI's jQuery  ECMA-262 ECMAScript  Ajax<br />                            EF  Codefirst  Powershell Angular Bootstrap</h3>
-                </div><div style="clear:both;"></div>
+                </div><div style="clear:both;"></div>*@
             </div>
-
-
-
-
-            <p class="bodyText" style="margin-top:6%;margin-bottom:2%;">
-
-
-            </p>
-
 
         </div>
 
     </div>
 
 </div>
-
+  <Beckman>
+        <div style="background-color:#00292387;
+            
+            height:auto;
+            
+            padding:1%;">
+    <h1>   These Images were created by me at <a href="https://beckman.illinois.edu/" target="_blank">Beckman Institute University of Illinois</a>. <br />
+        They are Journal Cover Images.  </h1>
+        <dflex>
+    <div><img src="~/art/Stack.jpg" /></div>
+    <div><img src="~/beckman1_.jpg" /></div>
+    <div><img src="~/beckman2_.jpg" /></div>
+    <div><img src="~/beckman3_.jpg" /></div>
+    <div><img src="~/beckman4_.jpg" /></div>
+    <div><img src="~/beckman5_.jpg" /></div>
+    <div><img src="~/art/PNAs.jpg" /></div>
+    <div><img src="~/art/AFM.jpg" /></div>
+    </dflex>
+    </div>
+    </Beckman>
 
 
 
@@ -218,35 +230,40 @@
 
 
 
-<script type="text/javascript">
+    <style>
+        Beckman{
+            color:white;
+        
+        }
+        Beckman a:visited, Beckman a{
+            color:white;
 
-    @*We can use   @Url.Action("")*@
+        }
 
+        Beckman dflex{
+            height:auto;
+            width:100%;
+            display:flex;
+            justify-content:space-around;
+            margin-bottom:3vh;
+            
+        }
+        Beckman img{
+            padding:0;
+            margin:0;
+            height:auto;
+           width:10vw;
+        }
+        Beckman h1{
+            float:right;
+            font-size:14px;
+                font-weight:100;
+            margin-bottom:20px;
+        }
 
+    </style>
 
-
-                                                                                            //console.log(`pageReplaceFiring`)
-
-
-                                                                                         //$(`html`).innerHTml =  $(`html`).html().toString().replace('{{', '').replace('}}', '')
-
-
-                                                                                            //$(`shinglog`).html = page
-                                                                                            //console.log(`pageRepplace Compelte`)
-
-                                                                                            //.replace('{{',"").replace('}}',""))
-
-
-                                                                                            //document.getElementsByTagName('shinLog').innerHTML = document.getElementsByTagName('shinLog').innerHTML.replace('{{', "").replace('}}',"")
-                                                                                            //console.log(document.documentElement.innerHTML.replace('{{',"").replace('}}',""))
-                                                                                            //document.getElementsByTagName('body').innerHTML =   document.getElementsByTagName('body').innerHTML.replace('{{',"").replace('}}',"")
-
-
-
-
-</script>
-
-<style>
+  <style>
     gallery {
         width: 86%;
         height: auto;
@@ -255,61 +272,55 @@
         gallery img {
             width: 10.4%;
             height: auto;
-            border: 1px solid rgba(0, 0, 0, 0.45);
+          
             margin: 0.3vh -0.2%;
             border-radius: 3px;
             opacity: .9;
         }
 </style>
 
-<gallery>
-
-    <img src="~/beckman1_.jpg" />
-    <img src="~/beckman2_.jpg" />
-    <img src="~/beckman3_.jpg" />
-    <img src="~/beckman4_.jpg" />
-    <img src="~/beckman5_.jpg" />
-    <img src="~/art/PNAs.jpg" />
-    <img src="~/art/AFM.jpg" />
-    <img src="~/Bow.jpg" />
-    <img src="~/Look.jpg" />
-    <img src="~/Monday.jpg" />
+<gallery style="display:none;">
+    
+    <img src="~/art/Artisan.jpg" />
+    <img src="~/art/ATG.jpg" />
+    @*<img src="~/Bow.jpg" />*@
+    @*<img src="~/Look.jpg" />*@
+    @*<img src="~/Monday.jpg" />*@
     <img src="~/Jade.jpg" />
     <img src="~/Beckman.jpg" />
-    <img src="~/Halt.jpg" />
+    @*<img src="~/Halt.jpg" />*@
 
-    <img src="~/Conroy.png" style="height:10vh;width:auto" />
+    @*<img src="~/Conroy.png" style="height:10vh;width:auto" />*@
     <img src="~/art/AhhYeah.jpg" />
     <img src="~/art/AhhYeahus.jpg" />
     <img src="~/art/Air.jpg" />
-    <img src="~/art/Artisan.jpg" />
-    <img src="~/art/ATG.jpg" />
-    <img src="~/art/BeHarpy.jpg" />
+   
+    @*<img src="~/art/BeHarpy.jpg" />*@
 
     <img src="~/art/Blow.jpg" />
     <img src="~/art/Built.jpg" />
     <img src="~/art/Butterfly.jpg" />
     <img src="~/art/Car.jpg" />
     <img src="~/art/Clayton.jpg" />
-    <img src="~/art/CureForColor.jpg" />
+    @*<img src="~/art/CureForColor.jpg" />*@
     <img src="~/art/Data.jpg" />
-    <img src="~/art/Foh.jpg" />
-    <img src="~/art/Gui.jpg" />
-    <img src="~/art/Guise.jpg" />
-    <img src="~/google.jpg" />
-    <img src="~/art/IOU.jpg" />
+    @*<img src="~/art/Foh.jpg" />*@
+    @*<img src="~/art/Gui.jpg" />*@
+    @*<img src="~/art/Guise.jpg" />*@
+    @*<img src="~/google.jpg" />*@
+    @*<img src="~/art/IOU.jpg" />*@
     <img src="~/art/Jay.jpg" />
     <img src="~/art/Necklace.jpg" />
-    <img src="~/art/Nude.jpg" />
+    @*<img src="~/art/Nude.jpg" />*@
 
-    <img src="~/art/Proc2.jpg" />
-    <img src="~/art/Procedural.jpg" />
+    @*<img src="~/art/Proc2.jpg" />*@
+    @*<img src="~/art/Procedural.jpg" />*@
     <img src="~/art/Rawlings.jpg" />
-    <img src="~/art/RightHere.jpg" />
+    
     <img src="~/art/SS.jpg" />
-    <img src="~/art/Stack.jpg" />
+    
     <img src="~/art/Stenciol.jpg" />
-    <img src="~/jtAssoc.png" />
+    
     <img src="~/JT_2.jpg" />
     <img src="~/needle.jpg" />
     <img src="~/cat.jpg" />
@@ -318,11 +329,3 @@
 
 
 
-
-<div class="lastimgWrapper">
-    <div class="lastImg">
-        <img src="~/hiking_sml.jpg" />
-        <img src="~/pool_sml.jpg" />
-        <img src="~/hiking2_sml.jpg" />
-    </div>
-</div>

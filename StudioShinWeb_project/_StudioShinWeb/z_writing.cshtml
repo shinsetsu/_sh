@@ -12,7 +12,7 @@
 
         <p>
             I've worked with ASP and Web Applications for the last 7-8 years now. There are many areas of Web Technology.
-            I enjoy most areas. I strive to keep code minimal, human readable, and maintainable.
+            I enjoy most areas. I strive to keep code minimal, human readable, and maintainable. 
           
         </p>
         @*<p>
@@ -107,10 +107,10 @@
                     <b style="font-size:22px;">Zachery Johnson</b>
                 </h3>
                 <p>
-                    +1 502.291.2208   <br />
+                    +1 214.490.3232   <br />
                     <a href="mailto:Shinsetsu@protonmail.com" style="color:black;border:none;"> shinsetsu@protonmail.com</a>  <br />
 
-                    <a href="http://www.shinsetsu.xyz" target="_self">www.shinsetsu.xyz</a>    <br />
+                    <a href="http://www.studioshin.dev" target="_self">www.studioshin.dev</a>    <br />
 
                     <a href="https://github.com/shinsetsu" target="_blank">github.com/shinsetsu</a>    <br />
 
@@ -130,6 +130,15 @@
 </div>          @*WritingWrapper*@
 <div class="clear"></div>
 
+<div class="lastimgWrapper">
+    <div class="lastImg">
+        <img src="~/hiking_sml.jpg" />
+        <img src="~/pool_sml.jpg" />
+        <img src="~/hiking2_sml.jpg" />
+    </div>
+</div>
+
+
 
 
 <!-- printThis -->
@@ -140,85 +149,4 @@
     </div>*@
 
 
-
-<script>
-
-    ////function printPage(sURL) {
-    ////    this.contentWindow.__container__ = document.getElementById("writingWrapper")
-    ////    this.contentWindow.onbeforeunload = closePrint
-    ////    this.contentWindow.onafterprint = closePrint
-    ////    this.contentWindow.focus() // Required for IE
-    ////    this.contentWindow.print()
-
-
-    ////    //var oHiddFrame = document.createElement("iframe")
-    ////    //oHiddFrame.onload = setPrint
-    ////    //oHiddFrame.style.position = "fixed"
-    ////    //oHiddFrame.style.right = "0"
-    ////    //oHiddFrame.style.bottom = "0"
-    ////    //oHiddFrame.style.width = "0"
-    ////    //oHiddFrame.style.height = "0"
-    ////    //oHiddFrame.style.border = "0"
-    ////    //oHiddFrame.src = sURL
-    ////    //document.body.appendChild(oHiddFrame)
-    ////}
-
-
-    //$('#print').click(function () {
-    //    $('consoleLog').html('Triggered: Print Writing')
-
-        //https://jasonday.github.io/printThis/#demos
-        //better yet... USe Web Api   Window.print()   lol   https://developer.mozilla.org/en-US/docs/Web/Guide/Printing
-
-
-
-
-
-        //■■■■■■■■■■■■■■■■■■■■■■■■■■
-        //■shinTD■
-        //  Surly there is a more elegant way to performt this.
-        //   We are not in the buisness of searching for proper CSS Stylings, to add it to a print quee...
-        //    I see to Take a Snapeshot of the page.... With Text Selectable,
-        //    Proboally something to turn all CSS for the given Wrapper
-        //       To Inline CSS.
-        //       Then take the item to (Print)
-        //            I'd assume this would be much cleaner, and autoUpdating for any future requestOfPrint....... /w updated styles
-        //             someone   Get/Write this... using Vanilla.....      ThX...   something for Zach...
-        //
-        //
-        //  some vanilla code left below... These found on the Mozilla WebAPI's site.
-        // I'd rather work with it from  as close to Vanilla as we can...
-        //      Later the style editing of the docment for PrintStyles should be manipulated Live-Page style....
-        //■■■■■■■■■■■■■■■■■■■■
-
-        //document.getElementById(writingWrapper).print()
-        //var html = "<html>"
-        //html += document.getElementById('writingWrapper').innerHTML
-        //html += "</html>"
-
-        //var printWin = window.open('', '', 'left=0,top=0,width=1,height=1,toolbar=0,scrollbars=0,status  =0')
-        //printWin.document.write(html)
-        //printWin.document.close()
-        //printWin.focus()
-        //printWin.print()
-        //printWin.close()
-
-        //$('#writingWrapper').printThis(
-        //    {
-        //        printContainer: true,       // print outer container/$.selector
-        //        importCSS: true,            // import parent page css
-        //        importStyle: true,         // import style tags
-        //        removeInline: false,        // remove inline styles from print elements
-        //        //loadCSS: "/port19/writing.css",                // path to additional css file - use an array [] for multiple
-        //        loadCSS: "/port19/printWriting.css",                // path to additional css file - use an array [] for multiple
-        //        removeScripts: false,       // remove script tags from print content
-        //    })
-
-
-    //})
-
-
-
-
-</script>
 

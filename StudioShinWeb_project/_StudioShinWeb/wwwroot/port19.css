@@ -49,15 +49,15 @@ body {
     width: 100% !important;
     max-width: 100% !important;
     height: a;
-    /*letter-spacing: .1px;*/
+    
     overflow: scroll;
     overflow-X: hidden;
     font-size: 14px;
     font-weight: 200;
     font-family: 'IBM Plex Mono', monospace, 'Open Sans', sans-serif;
     font-family: "Open Sans", Arial, sans-serif;
-    letter-spacing: 1.4px;
-    line-height: 17px;
+    letter-spacing: 1px;
+    
     /*background: url(/port19/honeycomb33.png) repeat, radial-gradient(#00564bb8 41%, #04112f 100%);*/
     background: url(/honeycomb3.png) repeat, radial-gradient(#06ac9e 41%, #123d64 100%);
     /*//background: url(honeycomb3.png) repeat, radial-gradient( #91c9e2 41%,#6c96a9 100%);*/
@@ -381,7 +381,7 @@ footer p {
         background: linear-gradient(0.2turn, rgba(16, 1, 35, 0.46), rgba(6, 0, 77, 0.18), rgba(25, 0, 61, 0.47));
         background: linear-gradient(0.298turn, rgba(34, 0, 19, 0.68), rgba(0, 11, 26, 0.45), rgba(25, 0, 61, 0.62));
         width: 100%;
-        padding-bottom: 2%;
+        padding-bottom: 1%;
         box-shadow: inset 19px 209px 90vh -34px rgba(10, 0, 32, 0.44);
     }
 
@@ -564,10 +564,10 @@ consoleLog {
         font-size: 19px;
         /* color: rgb(0 255 20); */
         color: rgb(72, 72, 72);
-        line-height: 31px;
+        
         /* letter-spacing: .01vw; */
         font-weight: 400;
-        padding-top: 0.9%;
+        
         padding-right: 2%;
         padding-left: 2%;
     }
@@ -578,7 +578,7 @@ consoleLog {
         font-size: 26.3px;
         color: rgb(149, 40, 146);
         letter-spacing: -0.085vw;
-        line-height: 7.5vh;
+        line-height: 3.5vh;
         word-spacing: -4.5px;
     }
 
@@ -1109,7 +1109,7 @@ pre {
 
 .lastImg {
     display: flex;
-    width: 95.9%;
+    width: 91.9%;
     justify-content: space-around;
     margin: auto;
     margin-bottom: 4%;
@@ -1120,9 +1120,9 @@ pre {
     .lastImg img {
         height: auto;
         width: 33.33%;
-        border-top: 1px solid black;
-        border-bottom: 1px solid black;
-        box-shadow: -3px 0 0.3cm #000000;
+        
+        
+        box-shadow: -2px 0 0.2cm #000000;
     }
 
         .lastImg img:first-of-type {
