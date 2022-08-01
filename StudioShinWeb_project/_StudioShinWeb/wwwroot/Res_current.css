@@ -20,7 +20,7 @@
         /*transform: scale(1.2);*/
         /*transform: scale(1.2);*/
         /*margin-top:6.6%;
-                                                            margin-bottom:10%;*/
+                                                                margin-bottom:10%;*/
         position: relative;
     }
 
@@ -295,14 +295,13 @@
     resume .resJob {
         width: 100%;
         height: auto;
-            margin-top: 5.75%;
+        margin-top: 5.75%;
     }
 
         resume .resJob h1 {
             font-size: 15px;
             font-weight: 600;
             color: black;
-            
         }
 
         resume .resJob h2, .resJob a {
@@ -383,7 +382,6 @@
     resume #skills {
         margin-top: 1%;
         margin-left: -60px;
-        
     }
 
         resume #skills li {
@@ -456,7 +454,7 @@
 
         resume .resEdu h2 a {
             margin-top: -2%;
-            color:black;
+            color: black;
             font-size: 15px;
             font-weight: 400;
             margin-left: 1%;
@@ -471,11 +469,11 @@
         }
 
         resume .resEdu li {
-            color:black;
+            color: black;
             font-weight: 200;
             display: inline-block;
             width: 100%;
-            padding-bottom:2%;
+            padding-bottom: 2%;
             font-size: 11px;
         }
 
@@ -545,21 +543,9 @@
     }
 
     .parkland li {
-        width: 45%!important;
-        
+        width: 45% !important;
     }
-    resume h1{font-size:14px;}
 
-
-    
-@media print {
-  a {
-    border-bottom: none;
-  }
-
-  page {
-    border: none;
-    height: 100%;
-    width: 100%;
-  }
-}
+    resume h1 {
+        font-size: 14px;
+    }
