@@ -11,6 +11,9 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
+using MailKit.Net.Smtp;
+using MimeKit;
+using _StudioShinWeb.oB;
 
 namespace _StudioShinWeb {
   public class HomeController : Controller {
@@ -18,12 +21,15 @@ namespace _StudioShinWeb {
     private readonly DataBase _DB;
     private readonly IWebHostEnvironment _ENV;
     private readonly IHttpContextAccessor _httpContextAccessor;
+    private shinEmail _shinEmail;
     // private _shIP_M _shIP_M;
 
     public HomeController(DataBase _DB, IWebHostEnvironment env, IHttpContextAccessor httpContextAccessor) {
 
       this._DB = _DB; _ENV = env;
       _httpContextAccessor = httpContextAccessor;
+      _shinEmail = new shinEmail();
+
 
     }
 
@@ -263,7 +269,73 @@ namespace _StudioShinWeb {
     //}
 
 
+    [Route("ContactMe")] public IActionResult _contact() { return View("z_ContactMe.cshtml"); }
+    [Route("sendEmail")]
+    public JsonResult SendEmail([FromBody] shinEmail email) {
+
+      //https://github.com/jstedfast/MailKit
+
+      string FromEmail = email.FromEmail;
+      string FromName = email.FromName;
+      string Subject = email.Subject;
+      string MessageBody = email.MessageBody;
+
+
+      string ToEmail = "shinsetsu@protonmail.com";
+
+      bool emailSentSuccess = false;
+
+
+      try {
+
+
+
+        var message = new MimeMessage();
+        message.From.Add(new MailboxAddress(FromName, FromEmail));
+        message.To.Add(new MailboxAddress("■■■", ToEmail));
+        message.Subject = Subject;
+
+        message.Body = new TextPart("plain") {
+          Text = MessageBody
+        };
+
+        using (var client = new SmtpClient()) {
+          // For demo-purposes, accept all SSL certificates (in case the server supports STARTTLS)
+          client.ServerCertificateValidationCallback = (s, c, h, e) => true;
+
+          client.Connect("smtp.gmail.com", 587, false);
+
+          // Note: only needed if the SMTP server requires authentication
+          client.Authenticate("shindevasp@gmail.com", "shinDev123");
+
+          client.Send(message);
+          emailSentSuccess = true;
+          client.Disconnect(true);
+        }
+
+        
+
+        _shinEmail.AddEmailToDB(_DB, email);
+      } catch (Exception) {
+        return Json(emailSentSuccess.ToString());
+
+      }
+
+      return Json(emailSentSuccess.ToString());
+
+    }
 
 
   }
+
+
+
+
+
+
+
+
+
+
+
 }

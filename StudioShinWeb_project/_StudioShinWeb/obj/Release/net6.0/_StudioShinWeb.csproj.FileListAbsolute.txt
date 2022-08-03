@@ -58,3 +58,6 @@ C:\shinRepos\_sh\StudioShinWeb_project\_StudioShinWeb\obj\Release\net6.0\refint\
 C:\shinRepos\_sh\StudioShinWeb_project\_StudioShinWeb\obj\Release\net6.0\_StudioShinWeb.pdb
 C:\shinRepos\_sh\StudioShinWeb_project\_StudioShinWeb\obj\Release\net6.0\_StudioShinWeb.genruntimeconfig.cache
 C:\shinRepos\_sh\StudioShinWeb_project\_StudioShinWeb\obj\Release\net6.0\ref\_StudioShinWeb.dll
+C:\shinRepos\_sh\StudioShinWeb_project\_StudioShinWeb\bin\Release\net6.0\MailKit.dll
+C:\shinRepos\_sh\StudioShinWeb_project\_StudioShinWeb\bin\Release\net6.0\MimeKit.dll
+C:\shinRepos\_sh\StudioShinWeb_project\_StudioShinWeb\bin\Release\net6.0\BouncyCastle.Crypto.dll

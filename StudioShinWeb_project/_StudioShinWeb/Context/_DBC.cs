@@ -31,7 +31,12 @@ namespace _DBC {
     //public DbSet<_oBjects._shIP_M> _shIP_M { get; set; }
     public DbSet<_oBjects.shinIps2> shinIps2 { get; set; }
     public DbSet<_oBjects.shinSiteMetrics> shinSiteMetrics { get; set; }
+
+
     
+    public DbSet<_StudioShinWeb.oB.shinEmail> shinEmail { get; set; }
+
+
 
 
 
