@@ -358,6 +358,7 @@ C:\shinRepos\_sh\StudioShinWeb_project\_StudioShinWeb\obj\Release\net6.0\win-x64
 C:\shinRepos\_sh\StudioShinWeb_project\_StudioShinWeb\obj\Release\net6.0\win-x64\PubTmp\Out\msquic.dll
 C:\shinRepos\_sh\StudioShinWeb_project\_StudioShinWeb\obj\Release\net6.0\win-x64\PubTmp\Out\ucrtbase.dll
 C:\shinRepos\_sh\StudioShinWeb_project\_StudioShinWeb\obj\Release\net6.0\win-x64\PubTmp\Out\aspnetcorev2_inprocess.dll
+C:\shinRepos\_sh\StudioShinWeb_project\_StudioShinWeb\obj\Release\net6.0\win-x64\PubTmp\Out\MailKit.dll
 C:\shinRepos\_sh\StudioShinWeb_project\_StudioShinWeb\obj\Release\net6.0\win-x64\PubTmp\Out\Microsoft.Data.SqlClient.dll
 C:\shinRepos\_sh\StudioShinWeb_project\_StudioShinWeb\obj\Release\net6.0\win-x64\PubTmp\Out\Microsoft.EntityFrameworkCore.dll
 C:\shinRepos\_sh\StudioShinWeb_project\_StudioShinWeb\obj\Release\net6.0\win-x64\PubTmp\Out\Microsoft.EntityFrameworkCore.Abstractions.dll
@@ -370,7 +371,9 @@ C:\shinRepos\_sh\StudioShinWeb_project\_StudioShinWeb\obj\Release\net6.0\win-x64
 C:\shinRepos\_sh\StudioShinWeb_project\_StudioShinWeb\obj\Release\net6.0\win-x64\PubTmp\Out\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\shinRepos\_sh\StudioShinWeb_project\_StudioShinWeb\obj\Release\net6.0\win-x64\PubTmp\Out\Microsoft.IdentityModel.Tokens.dll
 C:\shinRepos\_sh\StudioShinWeb_project\_StudioShinWeb\obj\Release\net6.0\win-x64\PubTmp\Out\Microsoft.Win32.SystemEvents.dll
+C:\shinRepos\_sh\StudioShinWeb_project\_StudioShinWeb\obj\Release\net6.0\win-x64\PubTmp\Out\MimeKit.dll
 C:\shinRepos\_sh\StudioShinWeb_project\_StudioShinWeb\obj\Release\net6.0\win-x64\PubTmp\Out\Newtonsoft.Json.dll
+C:\shinRepos\_sh\StudioShinWeb_project\_StudioShinWeb\obj\Release\net6.0\win-x64\PubTmp\Out\BouncyCastle.Crypto.dll
 C:\shinRepos\_sh\StudioShinWeb_project\_StudioShinWeb\obj\Release\net6.0\win-x64\PubTmp\Out\System.Configuration.ConfigurationManager.dll
 C:\shinRepos\_sh\StudioShinWeb_project\_StudioShinWeb\obj\Release\net6.0\win-x64\PubTmp\Out\System.Drawing.Common.dll
 C:\shinRepos\_sh\StudioShinWeb_project\_StudioShinWeb\obj\Release\net6.0\win-x64\PubTmp\Out\System.IdentityModel.Tokens.Jwt.dll
