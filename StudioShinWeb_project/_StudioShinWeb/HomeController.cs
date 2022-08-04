@@ -57,6 +57,7 @@ namespace _StudioShinWeb {
 
       ViewBag.IpTotalCount = "-";
       ViewBag.IpDistinctCount = "-";
+      ViewBag.YourVisits = "-";
       ViewBag.pageViewsDebug = "-";
       ViewBag.pageViewsRelease = "-";
       ViewBag.ClientIP = "-";
@@ -77,13 +78,14 @@ namespace _StudioShinWeb {
       {
 
         shinIps2 ip = new shinIps2();
-
-        if ((ViewBag.ClientIP = HttpContext.Connection.RemoteIpAddress.ToString()) != null) {
-
-          ip.upsertIP(Request.HttpContext.Connection.RemoteIpAddress.ToString(), _DB, "url");
+       var  ClientIP = HttpContext.Connection.RemoteIpAddress.ToString();
+        if (ClientIP  != null) {
+          ViewBag.ClientIP = ClientIP;
+          ip.upsertIP(Request.HttpContext.Connection.RemoteIpAddress.ToString(), _DB);
           ViewBag.IpTotalCount = ip.GetUniqueIpRowCount(_DB);
           ViewBag.IpDistinctCount = ip.GetDistinctIpRowCount(_DB);
-          
+          ViewBag.YourVisits = ip.GetYourVisits(_DB, ClientIP);
+
         } else { ViewBag.IpCount = 0; }
 
 

@@ -164,6 +164,13 @@ namespace _oBjects {
 
     }
 
+    public int GetYourVisits(DataBase _DB, string ClientIP) {
+
+      //var customers = context.Customers.Where(x => customerIds.Contains(x.CustomerID)).ToList();
+
+      //return _DB.shinIps2.Where(x => x.IP == ClientIP).ToList();
+      int return 0;
+    }
     public int GetDistinctIpRowCount(DataBase _DB) {
 
       return _DB.shinIps2.Select(x => x.IP).Distinct().Count();
@@ -205,7 +212,7 @@ namespace _oBjects {
 
 
 
-    public bool upsertIP(string ip, DataBase _DB, string currentPage) { //Returns True if added, False if not;
+    public bool upsertIP(string ip, DataBase _DB) { //Returns True if added, False if not;
 
 
 
