@@ -269,6 +269,10 @@ namespace _StudioShinWeb {
     //}
 
 
+    [Route("Examples")] public IActionResult Examples() { return View("Examples.cshtml"); }
+
+
+
     [Route("ContactMe")] public IActionResult _contact() { return View("z_ContactMe.cshtml"); }
     [Route("sendEmail")]
     public JsonResult SendEmail([FromBody] shinEmail email) {
