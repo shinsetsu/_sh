@@ -130,12 +130,9 @@ namespace _oBjects {
     [Key][DisplayName("Id}")] public Int64 id { get; set; }
     public string IP { get; set; }
     public IpTypes? IpType { get; set; }
-    public DateTime lastSeenDate { get; set; }
-    public DateTime firstSeenDate { get; set; }
-
-    public int? resumePageView { get; set; }
-    public int? indexPageViews { get; set; }
-    public Int64? totalIpsSeen { get; set; }
+    
+    public DateTime dateSeen { get; set; }
+    
     public string countCode { get; set; }
     public string countName { get; set; }
     public string stateABR { get; set; }
@@ -152,12 +149,10 @@ namespace _oBjects {
     public shinIps2() {
       IP = "_";
       this.IpType = null;
-      this.lastSeenDate = DateTime.UtcNow;
-      this.firstSeenDate = DateTime.UtcNow;
-      this.resumePageView = 0;
-      this.indexPageViews = 0;
+      this.dateSeen = DateTime.UtcNow;
+      
 
-      this.totalIpsSeen = -1;
+      
       this.countCode = "_";
       this.countName = "_";
       this.stateABR = "_";
@@ -169,13 +164,27 @@ namespace _oBjects {
 
     }
 
+    public int GetDistinctIpRowCount(DataBase _DB) {
 
-
-    public int GetIpRowCount(DataBase _DB) {
-
+      return _DB.shinIps2.Select(x => x.IP).Distinct().Count();
+    }
+    public  int GetUniqueIpRowCount(DataBase _DB) {
 
       return _DB.shinIps2.Select(x => x.IP).Count();
     }
+
+
+    //public int GetUniqueIpRowCount(DataBase _DB) {
+
+
+    //  (from o in context.MyContainer
+    //   where o.ID == '1'
+    //   from t in o.MyTable
+    //   select t).Count();
+
+    //  return _DB.shinIps2.Select(x => x.IP).Count();
+    //}
+
     //public shinIps2 GetIp(int id) { return _DB.shinIps2.FirstOrDefault(x => x.id == id); }
     ////public  List<shinIps2> GetIps() {  return  Database.shinIps2.Select(); }
 

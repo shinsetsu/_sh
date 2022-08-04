@@ -55,6 +55,21 @@
 
     @Html.Partial("zz___TLinks.cshtml")
 
+    <style>
+        #numVisits{
+            margin:1vh 1vw;
+        }
+    </style>
+
+
+           @if (ViewBag.numberVisits != null || ViewBag.numberVisits!= "") {
+                    <div id="numVisits"> You have been to this site @ViewBag.numberVisits times</div>
+            }
+            else {
+        <div id="numVisits"> You have been to this site xxx times</div>
+        }
+        
+    
 
     <div style="clear:both"></div>
 
@@ -80,8 +95,11 @@
             @if (ViewBag.Mac != null || ViewBag.Mac != "") {
                 <li> Mac: @ViewBag.Mac</li>
             }
-            @if (ViewBag.IpCount != null || ViewBag.IpCount != "") {
-                <li> Num Ip's Seen: @ViewBag.IpCount</li>
+            @if (ViewBag.IpTotalCount != null || ViewBag.IpTotalCount != "") {
+                <li> Ip's Seen: @ViewBag.IpTotalCount</li>
+            }
+            @if (ViewBag.IpDistinctCount != null || ViewBag.IpDistinctCount != "") {
+                <li> Distinct Ip's Seen: @ViewBag.IpDistinctCount</li>
             }
             @if (ViewBag.ClientIP != null || ViewBag.ClientIP != "") {
                 <li>   ClientIP: @ViewBag.ClientIP</li>

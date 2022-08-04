@@ -55,7 +55,8 @@ namespace _StudioShinWeb {
       ViewBag.IsDebug = false;
 
 
-      ViewBag.IpCount = "-";
+      ViewBag.IpTotalCount = "-";
+      ViewBag.IpDistinctCount = "-";
       ViewBag.pageViewsDebug = "-";
       ViewBag.pageViewsRelease = "-";
       ViewBag.ClientIP = "-";
@@ -80,7 +81,9 @@ namespace _StudioShinWeb {
         if ((ViewBag.ClientIP = HttpContext.Connection.RemoteIpAddress.ToString()) != null) {
 
           ip.upsertIP(Request.HttpContext.Connection.RemoteIpAddress.ToString(), _DB, "url");
-          ViewBag.IpCount = ip.GetIpRowCount(_DB);
+          ViewBag.IpTotalCount = ip.GetUniqueIpRowCount(_DB);
+          ViewBag.IpDistinctCount = ip.GetDistinctIpRowCount(_DB);
+          
         } else { ViewBag.IpCount = 0; }
 
 
@@ -188,17 +191,6 @@ namespace _StudioShinWeb {
     public IActionResult Error() {
       return View("ErrorV.cshtml", new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
     }
-
-
-
-
-
-
-
-
-
-
-
 
 
 
