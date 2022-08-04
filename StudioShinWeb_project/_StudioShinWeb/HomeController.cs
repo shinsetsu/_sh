@@ -306,7 +306,7 @@ namespace _StudioShinWeb {
           client.Connect("smtp.gmail.com", 587, false);
 
           // Note: only needed if the SMTP server requires authentication
-          client.Authenticate("shindevasp@gmail.com", "shinDev123");
+          client.Authenticate("shindevasp@gmail.com", "brbhzvbcckaupbpd");
 
           client.Send(message);
           emailSentSuccess = true;
