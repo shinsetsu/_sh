@@ -141,7 +141,7 @@
     <input type="text" id="Subject" placeholder="Subject" />
 
     <textarea id="MessageBody" placeholder="MessageBody">
-    
+
     </textarea>
 
     <div id="sendEmail"> Send Email</div>
@@ -156,9 +156,10 @@
 
 
 
-    $("#sendEmail").click(function () {
+    $("#sendEmail").click(function() {
         event.stopPropagation() // This stops propigation of the Click event.
-        $('consoleLog').html('SendEmail Triggered')
+        consoleLogHTML = $('consoleLog')
+        consoleLogHTML.html('SendEmail Triggered')
 
         if (true) {
 
@@ -170,10 +171,10 @@
                 "MessageBody": $('#MessageBody').val()
             }
 
-            $('consoleLog').append(`<Br> FromEmail ${email.FromEmail}`)
-            $('consoleLog').append(`<Br> FromName ${email.FromName}`)
-            $('consoleLog').append(`<Br> Subject ${email.Subject}`)
-            $('consoleLog').append(`<Br> MessageBody ${email.MessageBody}`)
+            consoleLogHTML.append(`<Br> FromEmail ${email.FromEmail}`)
+            consoleLogHTML.append(`<Br> FromName ${email.FromName}`)
+            consoleLogHTML.append(`<Br> Subject ${email.Subject}`)
+            consoleLogHTML.append(`<Br> MessageBody ${email.MessageBody}`)
 
 
 
@@ -183,18 +184,21 @@
                 data: JSON.stringify(email),
                 contentType: "application/json; charset=utf-8",
                 dataType: "json",
-                success: function (response) {
-                    console.log('Success Sending success')
-                    $('consoleLog').append(`<Br> Success`)
-                    //$('consoleLog').append(`<Br> Success ${respone.rString}`) //   This is for wiring a ReturnString from the function.
+                success: function(response) {
+                       $('consoleLog').style.visibility = "hidden";
+
+                       consoleLogHTML.log('Success Sending success')
+                       consoleLogHTML.append(`<Br> Success`)
+                      //consoleLogHTML.append(`<Br> Success ${respone.rString}`) //   This is for wiring a ReturnString from the function.
+
                 },
-                failure: function (response) {
-                    console.log('Failure Sending failure')
-                    $('consoleLog').append(`<Br> Failure `)
+                failure: function(response) {
+                       consoleLogHTML.log('Failure Sending failure')
+                       consoleLogHTML.append(`<Br> Failure `)
                 },
-                error: function (response) {
-                    console.log('Error Sending error')
-                    $('consoleLog').append(`<Br> Error`)
+                error: function(response) {
+                       consoleLogHTML.log('Error Sending error')
+                       consoleLogHTML.append(`<Br> Error`)
                 }
             })
         } else {
